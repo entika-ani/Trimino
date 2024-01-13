@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarTrackHorizontal="@color/black"
+    tools:ignore="MissingDefaultResource"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/fon" />
+
+    <Button
+        android:id="@+id/het"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:onClick="goBack"
+        android:text="BACK"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/colors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="10dp"
+        android:text="Player 1"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <LinearLayout
+        android:id="@+id/xz1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/colors"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/elion"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:foreground="@drawable/hox"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/faira"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:foreground="@drawable/fire"
+            android:gravity="center" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/xz2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xz1"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/luna"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:foreground="@drawable/jurik"
+            android:backgroundTint="@color/white"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/silfa"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:foreground="@drawable/qami"
+            android:backgroundTint="@color/white"
+            android:gravity="center" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="580dp"
+        android:backgroundTint="@color/white"
+        android:text="NEXT"
+        android:textSize="55dp"
+        android:textColor="@color/black"
+        android:gravity="center" />
+
+</RelativeLayout>

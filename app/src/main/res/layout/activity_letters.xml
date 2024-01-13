@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarTrackHorizontal="@color/black"
+    tools:ignore="MissingDefaultResource"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/fon" />
+
+    <Button
+        android:id="@+id/et_veradardz"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/white"
+        android:onClick="goBack"
+        android:text="BACK"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/letter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        android:text="Chats"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <LinearLayout
+        android:id="@+id/Lay_str1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/letter"
+        android:layout_marginTop="23dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/tag1"
+            android:layout_width="239dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:text="Elion"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="italic|bold" />
+
+        <Button
+            android:id="@+id/tag2"
+            android:layout_width="239dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/white"
+            android:text="Faira"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="italic|bold" />
+
+        <Button
+            android:id="@+id/tag3"
+            android:layout_width="239dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/white"
+            android:text="Luna"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="italic|bold" />
+
+        <Button
+            android:id="@+id/tag4"
+            android:layout_width="239dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/white"
+            android:text="Silfa"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="italic|bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Lay_str2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/letter"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/tag1_1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="25dp"
+            android:backgroundTint="@color/white"
+            android:foreground="@drawable/logo_bn" />
+
+        <Button
+            android:id="@+id/tag2_2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:backgroundTint="@color/white"
+            android:foreground="@drawable/logo_krak" />
+
+        <Button
+            android:id="@+id/tag3_3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="25dp"
+            android:backgroundTint="@color/white"
+            android:foreground="@drawable/logo_jur" />
+
+        <Button
+            android:id="@+id/tag4_4"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="25dp"
+            android:backgroundTint="@color/white"
+            android:foreground="@drawable/logo_qami" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/verjaban"
+        android:layout_width="wrap_content"
+        android:layout_height="850dp"
+        android:layout_below="@+id/Lay_str2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp"
+        app:srcCompat="@drawable/kubiki" />
+
+</RelativeLayout>
