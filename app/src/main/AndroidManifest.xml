@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Trimino"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.actions" />
+        <meta-data
+            android:name="android.support.v7.app.AppCompatView.fontFamily"
+            android:resource="@font/protest" />
+
+        <activity
+            android:name=".table"
+            android:exported="false" />
+        <activity
+            android:name=".splashSqreen"
+            android:exported="false" />
         <activity
             android:name=".Syu1"
             android:exported="false"
