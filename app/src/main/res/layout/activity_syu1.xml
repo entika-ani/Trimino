@@ -38,7 +38,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginTop="29dp"
         android:layout_marginBottom="15dp"
-        android:text="  -Госпожа Луна, вы здесь?!?"
+        android:text=" -Are you here Miss Luna?!?"
         android:textSize="25dp"
         android:textColor="#171616"
         />

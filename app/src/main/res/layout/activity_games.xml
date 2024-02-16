@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scrollbarTrackHorizontal="@color/black"
-    tools:ignore="MissingDefaultResource"
-    tools:context=".MainActivity">
+    tools:context=".games">
 
 
     <ImageView
@@ -16,13 +14,42 @@
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/fon" />
 
+    <TextView
+        android:id="@+id/text_dab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Games"
+        android:textSize="55dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/protest"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        />
+
+    <Button
+        android:id="@+id/et_veradardz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_dab"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toLeftOf="@+id/text_dab"
+        android:backgroundTint="@color/white"
+        android:onClick="goBack"
+        android:text="BACK"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic" />
 
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/esim_1"
         android:background="#E3D0F1"
+        android:layout_marginTop="110dp"
         >
+
 
 
         <com.google.android.material.tabs.TabItem
@@ -53,7 +80,9 @@
             android:textSize="20dp"
             android:textColor="#000000"
             tools:ignore="SpUsage"/>
-        
+
+
+
     </com.google.android.material.tabs.TabLayout>
 
 

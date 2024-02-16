@@ -54,6 +54,7 @@
             android:backgroundTint="@color/white"
             android:foreground="@drawable/logo_bn"
             android:gravity="center"
+            android:onClick="startFirst"
             android:radius="10dp"
             android:text="3lvl"
             android:textColor="@android:color/white" />
@@ -67,6 +68,7 @@
             android:backgroundTint="@color/white"
             android:foreground="@drawable/logo_krak"
             android:gravity="center"
+            android:onClick="startF"
             android:radius="10dp"
             android:text="4lvl"
             android:textColor="@android:color/white" />
@@ -88,9 +90,10 @@
             android:layout_height="150dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
-            android:foreground="@drawable/logo_jur"
             android:backgroundTint="@color/white"
+            android:foreground="@drawable/logo_jur"
             android:gravity="center"
+            android:onClick="startW"
             android:radius="10dp"
             android:textColor="@android:color/white" />
 
@@ -100,9 +103,10 @@
             android:layout_height="140dp"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="10dp"
-            android:foreground="@drawable/logo_qami"
             android:backgroundTint="@color/white"
+            android:foreground="@drawable/logo_qami"
             android:gravity="center"
+            android:onClick="startWind"
             android:radius="20dp"
             android:textColor="@android:color/white" />
 
@@ -122,6 +126,7 @@
         android:backgroundTint="@color/white"
         android:foreground="@drawable/logo5"
         android:gravity="center"
+        android:onClick="startAll"
         android:radius="10dp"
         android:text="2lvl"
         android:textColor="@android:color/white" />

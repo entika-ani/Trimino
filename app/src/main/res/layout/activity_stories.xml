@@ -55,7 +55,7 @@
             android:layout_height="65dp"
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/white"
-            android:text="𓆩В Фарфоровом саде𓆪"
+            android:text="𓆩In the cerulean garden𓆪"
             android:textColor="#3E3C3C"
             android:textSize="23dp"
             android:textStyle="bold" />
@@ -66,7 +66,7 @@
             android:layout_height="65dp"
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/white"
-            android:text="𓆩Продолжение𓆪"
+            android:text="𓆩In the cerulean garden_2𓆪"
             android:textColor="#3E3C3C"
             android:textSize="23dp"
             android:textStyle="bold" />

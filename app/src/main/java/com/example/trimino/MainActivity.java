@@ -16,21 +16,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startNEWActivity(View v){
-        Intent intent = new Intent(this, Second_Activity.class);
+        Intent intent = new Intent(this, games.class);
         startActivity(intent);
-        finish();
+        onPause();
     }
 
     public void startStories(View v){
         Intent intent = new Intent(this, Stories.class);
         startActivity(intent);
-        finish();
+        onPause();
+
     }
 
     public void startLetters(View v){
         Intent intent = new Intent(this, Letters.class);
         startActivity(intent);
-        finish();
+        onPause();
+
     }
 
 }

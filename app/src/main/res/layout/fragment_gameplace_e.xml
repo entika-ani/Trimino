@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.gameplaceE">
+
+    <ImageView
+        android:id="@+id/imageFon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/fon" />
+
+    <ImageView
+        android:id="@+id/Eliong"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="313dp"
+        app:srcCompat="@drawable/zemlyaska" />
+
+    <TextView
+        android:id="@+id/xos1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="121dp"
+        android:fontFamily="@font/protest"
+        android:text="Enigmatic sands:"
+        android:textColor="@color/black"
+        android:textSize="35dp" />
+
+    <Button
+        android:id="@+id/select1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignBottom="@+id/xos1"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="-86dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/protest"
+        android:text="𓆩SELECT𓆪"
+        android:textColor="#3E3C3C"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>

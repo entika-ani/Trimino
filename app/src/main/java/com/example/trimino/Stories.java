@@ -12,10 +12,11 @@ public class Stories extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stories);
+        onPause();
     }
     public void goBack(View v){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
-        finish();
+        onPause();
     }
 }
