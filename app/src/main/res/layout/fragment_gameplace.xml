@@ -33,7 +33,7 @@
         android:textSize="35dp" />
 
     <Button
-        android:id="@+id/select1"
+        android:id="@+id/selectFirePage"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_alignBottom="@+id/xos1"
@@ -41,6 +41,7 @@
         android:layout_marginBottom="-86dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/protest"
+        android:onClick="openGameplaceFire"
         android:text="𓆩SELECT𓆪"
         android:textColor="#3E3C3C"
         android:textSize="25dp" />
