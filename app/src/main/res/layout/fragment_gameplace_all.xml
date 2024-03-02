@@ -15,10 +15,11 @@
 
     <ImageView
         android:id="@+id/oleg"
-        android:layout_width="match_parent"
-        android:layout_height="276dp"
+        android:layout_width="260dp"
+        android:layout_height="193dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="313dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="483dp"
         app:srcCompat="@drawable/all" />
 
     <TextView
@@ -26,7 +27,8 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="121dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="243dp"
         android:fontFamily="@font/protest"
         android:text="Loodus Enigma:"
         android:textColor="@color/black"
@@ -38,10 +40,10 @@
         android:layout_height="65dp"
         android:layout_alignBottom="@+id/xos1"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginBottom="-86dp"
+        android:layout_marginBottom="-218dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/protest"
-        android:onClick="openGameplaceALL"
+        android:onClick="Game"
         android:text="𓆩SELECT𓆪"
         android:textColor="#3E3C3C"
         android:textSize="25dp" />

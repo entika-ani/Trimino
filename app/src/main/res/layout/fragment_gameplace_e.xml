@@ -15,10 +15,10 @@
 
     <ImageView
         android:id="@+id/Eliong"
-        android:layout_width="match_parent"
-        android:layout_height="270dp"
+        android:layout_width="351dp"
+        android:layout_height="178dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="313dp"
+        android:layout_marginBottom="483dp"
         app:srcCompat="@drawable/zemlyaska" />
 
     <TextView
@@ -26,22 +26,24 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="121dp"
+        android:layout_marginBottom="256dp"
         android:fontFamily="@font/protest"
         android:text="Enigmatic sands:"
         android:textColor="@color/black"
         android:textSize="35dp" />
 
     <Button
-        android:id="@+id/selectWindPage"
+        android:id="@+id/selected"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_alignBottom="@+id/xos1"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginBottom="-86dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="-240dp"
         android:backgroundTint="@color/white"
+        android:clickable="true"
         android:fontFamily="@font/protest"
-        android:onClick="openGameplaceHox"
+        android:onClick="onSelectedClick"
         android:text="𓆩SELECT𓆪"
         android:textColor="#3E3C3C"
         android:textSize="25dp" />

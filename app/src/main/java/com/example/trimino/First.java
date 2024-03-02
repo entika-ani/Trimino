@@ -14,6 +14,7 @@ public class First extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first);
 
         tabLayout = findViewById(R.id.esim_1);

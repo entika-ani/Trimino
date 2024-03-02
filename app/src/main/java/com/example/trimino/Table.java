@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class table extends AppCompatActivity {
+public class Table extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

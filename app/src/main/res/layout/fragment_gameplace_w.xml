@@ -14,19 +14,21 @@
         app:srcCompat="@drawable/fon" />
 
     <ImageView
+        android:layout_centerHorizontal="true"
         android:id="@+id/Lunag"
-        android:layout_width="match_parent"
-        android:layout_height="270dp"
+        android:layout_width="287dp"
+        android:layout_height="177dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="313dp"
+        android:layout_marginBottom="483dp"
         app:srcCompat="@drawable/jurik" />
 
     <TextView
+        android:layout_marginLeft="10dp"
         android:id="@+id/xos1"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="121dp"
+        android:layout_marginBottom="235dp"
         android:fontFamily="@font/protest"
         android:text="Etherial Elixir:"
         android:textColor="@color/black"
@@ -38,10 +40,10 @@
         android:layout_height="65dp"
         android:layout_alignBottom="@+id/xos1"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginBottom="-86dp"
+        android:layout_marginBottom="-220dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/protest"
-        android:onClick="openGameplaceWat"
+        android:onClick="Game"
         android:text="𓆩SELECT𓆪"
         android:textColor="#3E3C3C"
         android:textSize="25dp" />

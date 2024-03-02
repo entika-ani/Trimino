@@ -15,6 +15,7 @@
         app:srcCompat="@drawable/fon" />
 
     <TextView
+
         android:id="@+id/text_dab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -43,51 +44,53 @@
         android:textStyle="bold|italic" />
 
     <com.google.android.material.tabs.TabLayout
+        android:id="@+id/esim_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/esim_3"
-        android:background="#E3D0F1"
         android:layout_marginTop="110dp"
-        >
-
+        android:background="#E3D0F1"
+        app:tabTextColor="#000000">
 
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Luna"
-            android:textSize="20dp"
             android:textColor="#000000"
+            android:textSize="20dp"
             tools:ignore="SpUsage" />
+
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Elion"
-            android:textSize="20dp"
             android:textColor="#000000"
-            tools:ignore="SpUsage"/>
+            android:textSize="20dp"
+            tools:ignore="SpUsage" />
+
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Faira"
-            android:textSize="20dp"
             android:textColor="#000000"
-            tools:ignore="SpUsage"/>
+            android:textSize="20dp"
+            tools:ignore="SpUsage" />
+
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sylphia"
-            android:textSize="20dp"
             android:textColor="#000000"
-            tools:ignore="SpUsage"/>
+            android:textSize="20dp"
+            tools:ignore="SpUsage" />
+
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Siven"
-            android:textSize="20dp"
             android:textColor="#000000"
-            tools:ignore="SpUsage"/>
-
+            android:textSize="20dp"
+            tools:ignore="SpUsage" />
 
 
     </com.google.android.material.tabs.TabLayout>
