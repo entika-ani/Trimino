@@ -28,7 +28,7 @@
         android:fontFamily="@font/protest"
         android:text="WAR PRINCEESS"
         android:textColor="@color/white"
-        android:textSize="50dp" />
+        android:textSize="45dp" />
 
 
 

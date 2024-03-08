@@ -20,13 +20,13 @@ public class Splash extends AppCompatActivity {
 
         appname = findViewById(R.id.appname);
 
-        appname.animate().translationY(-1700).setDuration(2700).setStartDelay(0);
+        appname.animate().translationY(-1700).setDuration(2700).setStartDelay(3);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent i = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(i);
             }
-        }, 5000);
+        }, 4000);
     }
 }
