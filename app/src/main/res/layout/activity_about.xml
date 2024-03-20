@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/fon" />
+
+    <Button
+        android:id="@+id/backend"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#F8C9D9"
+        android:onClick="back"
+        android:text="@string/cross" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About WAR PRINCEESS"
+        android:textSize="33dp"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/protest"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/name">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="Добро пожаловать в WAR PRINCEESS.
+Здесь вы головой окунитесь в захватывающий сюжет, наполненный многими бедами.
+Узнайте судьбу стихийных сестёр, которых разлучилo слепoe желаниe завладеть королевством. Сражайтесь от имени сестёр вместе с друзьями и побеждая помогите сёстрам.
+Хорошо провести вам время. УДАЧИ!"
+            android:textSize="35dp"
+            android:fontFamily="@font/protest"
+            android:textColor="@color/black" />
+
+    </ScrollView>
+</RelativeLayout>

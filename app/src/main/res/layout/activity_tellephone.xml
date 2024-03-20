@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tellephone">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/fon" />
+
+    <TextView
+
+        android:id="@+id/text_dab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chats"
+        android:textSize="55dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/protest"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        />
+
+    <Button
+        android:id="@+id/et_veradardz"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_dab"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toLeftOf="@+id/text_dab"
+        android:backgroundTint="@color/white"
+        android:onClick="goBack"
+        android:text="BACK"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/esim_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:background="#E3D0F1"
+        app:tabTextColor="#000000">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Luna"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            tools:ignore="SpUsage" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Elion"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            tools:ignore="SpUsage" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Faira"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            tools:ignore="SpUsage" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sylphia"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            tools:ignore="SpUsage" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager4"
+        android:layout_below="@+id/esim_3"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        app:srcCompat="@drawable/semya" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-150dp"
+        app:srcCompat="@drawable/stroka" />
+
+    <Button
+        android:id="@+id/butun"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#56DC5D88"
+        android:text="START"
+        android:textSize="25dp" />
+
+
+
+
+
+</RelativeLayout>

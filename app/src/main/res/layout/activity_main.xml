@@ -48,14 +48,15 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_marginStart="65dp"
-        android:layout_marginTop="85dp"
         android:layout_marginEnd="65dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="@color/white"
+        android:fontFamily="@font/protest"
         android:onClick="startNEWActivity"
         android:text="Play!"
         android:textColor="@color/black"
-        android:textSize="38dp"
-        android:textStyle="italic|bold" />
+        android:textSize="35dp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button2"
@@ -64,24 +65,24 @@
         android:layout_below="@id/button1"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="65dp"
-        android:layout_marginTop="65dp"
         android:layout_marginEnd="65dp"
         android:layout_marginBottom="65dp"
-        android:text="Rules"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/protest"
+        android:onClick="startAbout"
+        android:text="About game"
         android:textColor="@color/black"
-        android:textSize="38dp"
-        android:textStyle="italic|bold"
-        android:backgroundTint="@color/white"/>
-
+        android:textSize="35dp"
+        android:textStyle="bold" />
 
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@id/button2"
-        >
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/button5"
@@ -100,9 +101,9 @@
             android:layout_height="65dp"
             android:layout_margin="10dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/white"
             android:text="🪙"
-            android:textSize="30dp"
-            android:backgroundTint="@color/white"/>
+            android:textSize="30dp" />
 
         <Button
             android:id="@+id/button7"
@@ -110,9 +111,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/white"
             android:text="🛒"
-            android:textSize="30dp"
-            android:backgroundTint="@color/white"/>
+            android:textSize="30dp" />
     </LinearLayout>
 
     <Button

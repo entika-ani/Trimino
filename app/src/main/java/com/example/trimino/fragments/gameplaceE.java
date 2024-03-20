@@ -25,10 +25,12 @@ public class gameplaceE extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            Intent intent = new Intent(getActivity(), First.class);
-            startActivity(intent);
+                Intent intent = new Intent(getActivity(), First.class);
+                startActivity(intent);
             }
         });
-    return view;
+        return view;
     }
-    }
+}
+
+

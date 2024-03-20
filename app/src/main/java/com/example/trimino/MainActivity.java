@@ -28,8 +28,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void startAbout(View v){
+        Intent intent = new Intent(this, About.class);
+        startActivity(intent);
+        onPause();
+
+    }
+
     public void startLetters(View v){
-        Intent intent = new Intent(this, Letters.class);
+        Intent intent = new Intent(this, Tellephone.class);
         startActivity(intent);
         onPause();
 
