@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Syu1_1">
+
+        <ImageView
+
+            android:id="@+id/imageView_sad"
+            android:layout_width="match_parent"
+            android:layout_height="647dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sad" />
+
+        <ImageView
+
+            android:id="@+id/magaxat"
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
+            android:layout_below="@+id/imageView_sad"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="-44dp"
+            android:layout_marginBottom="-14dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/magaxat" />
+
+
+        <TextView
+            android:id="@+id/luna_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_sad"
+            android:layout_alignBottom="@+id/imageView_sad"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="-31dp"
+            android:text="@string/luna_mess"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/nastroy"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="17dp"
+            android:backgroundTint="#B5B3B3"
+            />
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="12dp"
+            android:text="⚙️"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/n_ej"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="17dp"
+            android:backgroundTint="#B5B3B3"
+            android:text="BACK"
+            android:onClick="back"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/araj"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView_sad"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="-80dp"
+            android:backgroundTint="#B5B3B3"
+            android:onClick="araj"
+            android:text="->"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
