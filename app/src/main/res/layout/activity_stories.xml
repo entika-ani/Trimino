@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -57,11 +62,12 @@
             android:backgroundTint="@color/white"
             android:text="𓆩In the cerulean garden𓆪"
             android:textColor="#3E3C3C"
+            android:onClick="newej"
             android:textSize="23dp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/gl2"
+            android:id="@+id/gl3"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_marginTop="20dp"
@@ -70,6 +76,87 @@
             android:textColor="#3E3C3C"
             android:textSize="23dp"
             android:textStyle="bold" />
+        <Button
+            android:id="@+id/gl4"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:text="𓆩𓆪"
+            android:textColor="#3E3C3C"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/gl5"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:text="𓆩𓆪"
+            android:textColor="#3E3C3C"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/gl6"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:text="𓆩𓆪"
+            android:textColor="#3E3C3C"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/gl7"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:text="𓆩𓆪"
+            android:textColor="#3E3C3C"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/gl8"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:text="𓆩𓆪"
+            android:textColor="#3E3C3C"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/gl9"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:text="𓆩𓆪"
+            android:textColor="#3E3C3C"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/gl10"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:text="𓆩𓆪"
+            android:textColor="#3E3C3C"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/gl11"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:text="𓆩𓆪"
+            android:textColor="#3E3C3C"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
 
 
     </LinearLayout>
@@ -105,8 +192,91 @@
             android:textColor="@color/white"
             android:textSize="25dp"
             android:textStyle="bold" />
+        <Button
+            android:id="@+id/gl3_1"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#F6C4D5"
+            android:text="➡"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/gl4_1"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#F6C4D5"
+            android:text="➡"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/gl5_1"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#F6C4D5"
+            android:text="➡"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/gl6_1"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#F6C4D5"
+            android:text="➡"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/gl7_1"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#F6C4D5"
+            android:text="➡"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/gl8_1"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#F6C4D5"
+            android:text="➡"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/gl9_1"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#F6C4D5"
+            android:text="➡"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/gl10_1"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#F6C4D5"
+            android:text="➡"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
 
     </LinearLayout>
 
 
 </RelativeLayout>
+</ScrollView>

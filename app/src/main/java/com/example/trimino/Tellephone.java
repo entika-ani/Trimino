@@ -16,7 +16,7 @@ public class Tellephone extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tellephone);
     }
-    tabLayout = findViewById(R.id.esim_1);
+   /* tabLayout = findViewById(R.id.esim_1);
     viewPager2 = findViewById(R.id.view_pager);
     MyViewPagerAdapter2 myViewPagerAdapter2 = new MyViewPagerAdapter2(this);
         viewPager2.setAdapter(myViewPagerAdapter);
@@ -83,5 +83,5 @@ public class Tellephone extends AppCompatActivity {
                 tabLayout.getTabAt(position).select();
             }
         });
-    }
+    }*/
 }

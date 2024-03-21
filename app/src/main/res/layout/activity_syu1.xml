@@ -30,19 +30,6 @@
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/magaxat" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:layout_below="@+id/imageView_sad"
-        android:layout_alignTop="@+id/magaxat"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="29dp"
-        android:layout_marginBottom="15dp"
-        android:text=" -Are you here Miss Luna?!?"
-        android:textSize="25dp"
-        android:textColor="#171616"
-        />
-
     <Button
         android:id="@+id/nastroy"
         android:layout_width="55dp"
@@ -72,8 +59,24 @@
         android:layout_marginTop="17dp"
         android:backgroundTint="#B5B3B3"
         android:text="BACK"
+        android:onClick="back"
         android:textColor="@color/black"
         android:textSize="10dp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/araj"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView_sad"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="-71dp"
+        android:backgroundTint="#B5B3B3"
+        android:onClick="araj"
+        android:text="->"
+        android:textColor="@color/black"
+        android:textSize="20dp"
         android:textStyle="bold|italic" />
 
 </RelativeLayout>

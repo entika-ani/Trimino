@@ -19,4 +19,9 @@ public class Stories extends AppCompatActivity {
         startActivity(intent);
         onPause();
     }
+    public void newej(View v){
+        Intent intent = new Intent(this, Syu1.class);
+        startActivity(intent);
+        onPause();
+    }
 }
