@@ -11,7 +11,8 @@
 
         android:id="@+id/war1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
         app:srcCompat="@drawable/b"
         tools:ignore="InvalidId" />
 

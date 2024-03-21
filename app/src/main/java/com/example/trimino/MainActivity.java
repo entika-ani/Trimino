@@ -21,6 +21,12 @@ public class MainActivity extends AppCompatActivity {
         onPause();
     }
 
+    public void openWheel(View v){
+        Intent intent = new Intent(this, Wheeel.class);
+        startActivity(intent);
+        onPause();
+    }
+
     public void startStories(View v){
         Intent intent = new Intent(this, Stories.class);
         startActivity(intent);

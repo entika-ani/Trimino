@@ -40,12 +40,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
-            android:text="Добро пожаловать в WAR PRINCEESS.
-Здесь вы головой окунитесь в захватывающий сюжет, наполненный многими бедами.
-Узнайте судьбу стихийных сестёр, которых разлучилo слепoe желаниe завладеть королевством. Сражайтесь от имени сестёр вместе с друзьями и побеждая помогите сёстрам.
-Хорошо провести вам время. УДАЧИ!"
+            android:text="Welcome to           WAR PRINCESS.
+Here you will plunge into a fascinating story full of many troubles.
+Find out a fate of  spontaneous sisters who were separated by a blind desire to take over the kingdaom. Fight on behalf of the sisters with your friends and help sisters by winning.
+Have a good time.
+GOOD LUCK!"
             android:textSize="35dp"
-            android:fontFamily="@font/protest"
+            android:textStyle="bold"
             android:textColor="@color/black" />
 
     </ScrollView>

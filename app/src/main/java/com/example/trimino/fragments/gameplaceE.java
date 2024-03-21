@@ -2,14 +2,11 @@ package com.example.trimino.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-
 import com.example.trimino.First;
 import com.example.trimino.R;
 
@@ -32,5 +29,3 @@ public class gameplaceE extends Fragment {
         return view;
     }
 }
-
-
