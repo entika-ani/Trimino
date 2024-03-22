@@ -54,6 +54,15 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="luna_message">-Are you here Miss Luna?!? I have been searching for you everywhere. </string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="luna_mess">Don't scare me like that. From now, please tell me when you go somewhere. </string>
-
+    <string name="luna_mess">Do not scare me like that. From now, please tell me when you go somewhere. </string>
+    <string name="luna_gionu">-O, Gion, why are you so worried?</string>
+    <string name="luna_gionu2">Nothing bad will happen to me, and if I forget about my rainy garden...</string>
+    <string name="luna_gionu3">It is scary to imagine that everything can happen again.I will not let another death of my close person.</string>
+    <string name="gionu">-Miss, I think that you were not guilty of your brother is death.Please, do not torture yourself!</string>
+    <string name="luna">-Ok, I will try... When did my sister Elion visit us?</string>
+    <string name="answer">-Last Saturday. Did something happen Miss Luna?</string>
+    <string name="lunas_ans">-No, I just thought that it would be nice to meet her.Arrange a meeting for us!</string>
+    <string name="gion_ans">-I will immediately do that, Miss.</string>
+    <string name="lunas">-And also my rainy garden needs a special care, and I will be grateful for your help.</string>
+    <string name="verj_syu1">Gion bowed with gratitude and went to arrange a meeting of the sisters. Time passed, but Luna remained thoughtfully in the garden, thinking about the past and the future.</string>
 </resources>

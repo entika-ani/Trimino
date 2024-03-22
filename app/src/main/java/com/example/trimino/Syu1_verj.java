@@ -6,22 +6,28 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Syu1 extends AppCompatActivity {
+public class Syu1_verj extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_syu1);
+        setContentView(R.layout.activity_syu1_verj);
     }
+
     public void back(View v){
         Intent intent = new Intent(this, Stories.class);
         startActivity(intent);
-       finish();
+        finish();
+    }
+    public void araj(View v){
+        Intent intent = new Intent(this,Stories.class);
+        startActivity(intent);
+        finish();
     }
 
-    public void araj(View v){
-        Intent intent = new Intent(this,Syu1_1.class);
+    public void  mi_hatHet(View v){
+        Intent intent = new Intent(this,Syu5_3.class);
         startActivity(intent);
-        onPause();
+        finish();
     }
 }

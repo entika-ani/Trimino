@@ -13,6 +13,33 @@
         android:theme="@style/Theme.Trimino"
         tools:targetApi="31">
         <activity
+            android:name=".Syu1_verj"
+            android:exported="false" />
+        <activity
+            android:name=".Syu5_3"
+            android:exported="false" />
+        <activity
+            android:name=".Syu5_2"
+            android:exported="false" />
+        <activity
+            android:name=".Syu5_1"
+            android:exported="false" />
+        <activity
+            android:name=".Syu4_2"
+            android:exported="false" />
+        <activity
+            android:name=".Syu4_1"
+            android:exported="false" />
+        <activity
+            android:name=".Syu3_1"
+            android:exported="false" />
+        <activity
+            android:name=".Syu2_3"
+            android:exported="false" />
+        <activity
+            android:name=".Syu2_2"
+            android:exported="false" />
+        <activity
             android:name=".Syu2_1"
             android:exported="false" />
         <activity

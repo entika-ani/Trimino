@@ -19,6 +19,20 @@
         app:srcCompat="@drawable/sad" />
 
     <ImageView
+        android:id="@+id/lunaf"
+        android:layout_width="250dp"
+        android:layout_height="560dp"
+        android:layout_above="@+id/magaxat"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lunafor1" />
+
+    <ImageView
 
         android:id="@+id/magaxat"
         android:layout_width="match_parent"
@@ -40,7 +54,7 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="-20dp"
         android:layout_marginBottom="-31dp"
-        android:text="@string/luna_mess"
+        android:text="@string/luna_gionu"
         android:textColor="@color/black"
         android:textSize="20dp" />
 
@@ -87,10 +101,17 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="-80dp"
         android:backgroundTint="#B5B3B3"
-        android:onClick="araj"
-        android:text="->"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:textStyle="bold|italic" />
+        android:onClick="araj" />
+
+    <Button
+        android:id="@+id/mi_hat_het"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView_sad"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="323dp"
+        android:layout_marginBottom="-80dp"
+        android:backgroundTint="#B5B3B3"
+        android:onClick="mi_hatHet" />
 
 </RelativeLayout>

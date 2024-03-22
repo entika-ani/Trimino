@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Syu3_1">
 
     <ImageView
 
@@ -23,8 +23,6 @@
         android:layout_width="255dp"
         android:layout_height="538dp"
         android:layout_above="@+id/magaxat"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="-91dp"
         android:layout_marginBottom="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,13 +31,14 @@
         app:srcCompat="@drawable/gion" />
 
     <ImageView
+
         android:id="@+id/magaxat"
         android:layout_width="match_parent"
-        android:layout_height="142dp"
+        android:layout_height="200dp"
         android:layout_below="@+id/imageView_sad"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="-44dp"
-        android:layout_marginBottom="-14dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginBottom="-15dp"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/magaxat" />
 
@@ -47,15 +46,17 @@
     <TextView
         android:id="@+id/luna_textview"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="81dp"
         android:layout_below="@+id/imageView_sad"
         android:layout_alignBottom="@+id/imageView_sad"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="-20dp"
+        android:layout_marginTop="-50dp"
         android:layout_marginBottom="-31dp"
-        android:text="@string/luna_message"
+        android:text="@string/gionu"
         android:textColor="@color/black"
         android:textSize="20dp" />
+
+
 
     <Button
         android:id="@+id/nastroy"
@@ -97,9 +98,20 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView_sad"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="-80dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="-81dp"
         android:backgroundTint="#B5B3B3"
         android:onClick="araj" />
+
+    <Button
+        android:id="@+id/mi_hat_het"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView_sad"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="323dp"
+        android:layout_marginBottom="-84dp"
+        android:backgroundTint="#B5B3B3"
+        android:onClick="mi_hatHet" />
 
 </RelativeLayout>
