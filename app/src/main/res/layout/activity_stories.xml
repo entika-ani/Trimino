@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -72,6 +70,7 @@
             android:layout_height="65dp"
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/white"
+            android:onClick="syu2"
             android:text="𓆩In the cerulean garden_2𓆪"
             android:textColor="#3E3C3C"
             android:textSize="23dp"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Syu2_2">
+    tools:context=".S2_11">
 
     <ImageView
 
@@ -16,21 +16,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/sad" />
+        app:srcCompat="@drawable/pak" />
 
     <ImageView
         android:id="@+id/lunaf"
         android:layout_width="match_parent"
-        android:layout_height="1000dp"
+        android:layout_height="584dp"
+        android:layout_above="@+id/magaxat"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
         android:layout_marginEnd="0dp"
-        android:layout_marginBottom="-71dp"
+        android:layout_marginBottom="49dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gion2" />
+        app:srcCompat="@drawable/heraxos" />
 
     <ImageView
 
@@ -54,7 +54,7 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="-62dp"
         android:layout_marginBottom="-61dp"
-        android:text="@string/verj_syu1"
+        android:text="That day you found me, and in the other you lost me. The other time we were laughing together, but after that you were crying without stopping.Doesn't anything come to mind?"
         android:textColor="@color/black"
         android:textSize="20dp" />
 
@@ -113,6 +113,6 @@
         android:layout_marginBottom="-100dp"
         android:backgroundTint="#B5B3B3"
         android:onClick="mi_hatHet"
-         />
+        />
 
 </RelativeLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Syu2_2">
+    tools:context=".S2_6">
 
     <ImageView
 
@@ -16,21 +16,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/sad" />
+        app:srcCompat="@drawable/pak" />
 
     <ImageView
-        android:id="@+id/lunaf"
-        android:layout_width="match_parent"
-        android:layout_height="1000dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="-71dp"
+        android:id="@+id/gion"
+        android:layout_width="400dp"
+        android:layout_height="1016dp"
+        android:layout_above="@+id/magaxat"
+        android:layout_marginBottom="-130dp"
+        android:layout_marginLeft="-60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gion2" />
+        app:srcCompat="@drawable/l1" />
 
     <ImageView
 
@@ -54,7 +53,7 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="-62dp"
         android:layout_marginBottom="-61dp"
-        android:text="@string/verj_syu1"
+        android:text="@string/a7"
         android:textColor="@color/black"
         android:textSize="20dp" />
 
@@ -113,6 +112,6 @@
         android:layout_marginBottom="-100dp"
         android:backgroundTint="#B5B3B3"
         android:onClick="mi_hatHet"
-         />
+        />
 
 </RelativeLayout>

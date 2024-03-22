@@ -24,4 +24,9 @@ public class Stories extends AppCompatActivity {
         startActivity(intent);
         onPause();
     }
+    public void syu2(View v){
+        Intent intent = new Intent(this, Syu2.class);
+        startActivity(intent);
+        onPause();
+    }
 }

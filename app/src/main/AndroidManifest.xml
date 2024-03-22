@@ -13,6 +13,55 @@
         android:theme="@style/Theme.Trimino"
         tools:targetApi="31">
         <activity
+            android:name=".S2_15"
+            android:exported="false" />
+        <activity
+            android:name=".S2_14"
+            android:exported="false" />
+        <activity
+            android:name=".S2_13"
+            android:exported="false" />
+        <activity
+            android:name=".S2_12"
+            android:exported="false" />
+        <activity
+            android:name=".S2_11"
+            android:exported="false" />
+        <activity
+            android:name=".S2_10"
+            android:exported="false" />
+        <activity
+            android:name=".S2_9"
+            android:exported="false" />
+        <activity
+            android:name=".S2_8"
+            android:exported="false" />
+        <activity
+            android:name=".S2_7"
+            android:exported="false" />
+        <activity
+            android:name=".S2_6"
+            android:exported="false" />
+        <activity
+            android:name=".S2_5"
+            android:exported="false" />
+        <activity
+            android:name=".S2_4"
+            android:exported="false" />
+        <activity
+            android:name=".S2_3"
+            android:exported="false" />
+        <activity
+            android:name=".S2_2"
+            android:exported="false" />
+        <activity
+            android:name=".S2_1"
+            android:exported="false" />
+
+        <activity
+            android:name=".Syu2"
+            android:exported="false" />
+        <activity
             android:name=".Syu1_verj"
             android:exported="false" />
         <activity
@@ -86,11 +135,7 @@
         <activity
             android:name=".Stories"
             android:exported="false" />
-        <activity
-            android:name=".Second_Activity"
-            android:exported="false"
-            android:label="@string/title_activity_second"
-            android:theme="@style/Theme.Trimino" />
+
         <activity
             android:name=".Letters"
             android:exported="false"
@@ -101,7 +146,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Trimino</string>
     <string name="title_activity_letters">Letters</string>
@@ -64,5 +65,20 @@
     <string name="lunas_ans">-No, I just thought that it would be nice to meet her.Arrange a meeting for us!</string>
     <string name="gion_ans">-I will immediately do that, Miss.</string>
     <string name="lunas">-And also my rainy garden needs a special care, and I will be grateful for your help.</string>
-    <string name="verj_syu1">Gion bowed with gratitude and went to arrange a meeting of the sisters. Time passed, but Luna remained thoughtfully in the garden, thinking about the past and the future.</string>
+    <string name="verj_syu1">Gion bowed with gratitude and went to arrange a the sisters meeting . Time passed, but Luna remained thoughtful in the garden, thinking about the past and the future.</string>
+    <string name="a1">Elion\'s and Luna\'s meeting happened in cozy edge of the cerulean garden. The scent of flowers and sound of drops were making an atmosphere of incredible harmony. </string>
+    <string name="a2">-My dears, how wonderful is to meet you again. Dear Gion, does not my sister putting a lot of work on you?</string>
+    <string name="a3">-No no, what are you saying Miss Elion.  Miss Luna is very kind to me. </string>
+    <string name="a4"> -Gion, thank you for arranging meeting with my sister, but for now let us alone. And say others not to come here.</string>
+    <string name="a5">-Whatever you say Miss. Have a nice time.</string>
+    <string name="a6">-Sister, did anything happen? What is this secrecy? Have you learned anything about Sylphia?</string>
+    <string name="a7">-Not about her... On Friday evening, when I as always were taking care of rainy flowers, I found a phone.</string>
+    <string name="a8">-And what\'s inside? </string>
+    <string name="a9">-Unfortunately, I don\'t know, there is a password with eight symbols. </string>
+    <string name="a10">-How can I help you, sister? </string>
+    <string name="a11">-I\'m not sure but on the lock screen there is one very interesting picture. </string>
+
+    <string name="a14">-I will send people to check that is the phone on its place. </string>
+    <string name="a15">-No, Luna, I will check it by myself. If you will sent people it will be suspicious for Sylphia and Faera. Let me do that by myself.</string>
+    <string name="a16">-Ok, I trust you.</string>
 </resources>

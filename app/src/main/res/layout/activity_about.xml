@@ -26,8 +26,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="About WAR PRINCEESS"
-        android:textSize="33dp"
-        android:layout_marginLeft="60dp"
+        android:textSize="40dp"
+        android:layout_marginLeft="80dp"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:fontFamily="@font/protest"/>
@@ -40,14 +40,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
-            android:text="Welcome to           WAR PRINCESS.
+            android:text="Welcome to  WAR PRINCESS.
 Here you will plunge into a fascinating story full of many troubles.
 Find out a fate of  spontaneous sisters who were separated by a blind desire to take over the kingdaom. Fight on behalf of the sisters with your friends and help sisters by winning.
 Have a good time.
 GOOD LUCK!"
+            android:fontFamily="@font/protest"
             android:textSize="35dp"
             android:textStyle="bold"
-            android:textColor="@color/black" />
+            android:textColor="#B7000000" />
 
     </ScrollView>
 </RelativeLayout>
