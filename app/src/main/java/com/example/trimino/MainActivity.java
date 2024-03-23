@@ -34,6 +34,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void game(View v){
+        Intent intent = new Intent(this, GamePlay1.class);
+        startActivity(intent);
+        onPause();
+
+    }
+
     public void startAbout(View v){
         Intent intent = new Intent(this, About.class);
         startActivity(intent);
