@@ -1,5 +1,6 @@
 package com.example.trimino;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -199,5 +200,11 @@ public class GamePlay1 extends AppCompatActivity implements View.OnClickListener
         builder.setMessage(message)
                 .setPositiveButton("OK", null)
                 .show();
+    }
+
+    public void goBack(View v){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        onPause();
     }
 }
