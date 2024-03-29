@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarTrackHorizontal="@color/black"
+    tools:ignore="MissingDefaultResource"
+    tools:context=".Arajin">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/fon" />
+
+    <TextView
+
+        android:id="@+id/text_dab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First"
+        android:textSize="55dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/protest"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        />
+
+    <Button
+        android:id="@+id/et_veradardz"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_dab"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toLeftOf="@+id/text_dab"
+        android:backgroundTint="@color/white"
+        android:onClick="Back"
+        android:text="BACK"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_dab"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/h1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="#5185FBE0"
+            android:foreground="@drawable/pc1"
+            />
+
+        <Button
+            android:id="@+id/h2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="#5185FBE0"
+            android:foreground="@drawable/pc2"
+            />
+        <Button
+            android:id="@+id/h3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="#5185FBE0"
+            android:foreground="@drawable/pc3"
+            />
+        <Button
+            android:id="@+id/h4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="#5185FBE0"
+            android:foreground="@drawable/pc4"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bomj1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_dab"
+        android:orientation="vertical"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/xosq1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Mistress of the waters"
+            android:fontFamily="@font/protest"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" />
+
+
+        <TextView
+            android:id="@+id/xosq2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Mistress of the  Gales"
+            android:fontFamily="@font/protest"
+            android:textSize="35dp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/xosq3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Mistress of the  Gales"
+            android:fontFamily="@font/protest"
+            android:textSize="35dp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/xosq4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Mistress of the  Gales"
+            android:fontFamily="@font/protest"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="40dp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/selectWindPage"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignBottom="@+id/bomj1"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-111dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/protest"
+        android:text="𓆩SELECT𓆪"
+        android:textColor="#3E3C3C"
+        android:textSize="25dp" />
+
+</RelativeLayout>

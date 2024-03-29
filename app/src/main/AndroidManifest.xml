@@ -13,6 +13,42 @@
         android:theme="@style/Theme.Trimino"
         tools:targetApi="31">
         <activity
+            android:name=".Tellephone"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityH4"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityH3"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityH2"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityH1"
+            android:exported="false" />
+        <activity
+            android:name=".Arajin"
+            android:exported="false" />
+        <activity
+            android:name=".Syu1_2_2"
+            android:exported="false" />
+        <activity
+            android:name=".Syu1_2_1"
+            android:exported="false" />
+        <activity
+            android:name=".Syu1_2y"
+            android:exported="false" />
+        <activity
+            android:name=".Syu1_1_2"
+            android:exported="false" />
+        <activity
+            android:name=".Syu1_1_1"
+            android:exported="false" />
+        <activity
+            android:name=".Syu1_1y"
+            android:exported="false" />
+        <activity
             android:name=".GamePlay1"
             android:exported="false" />
         <activity
@@ -101,9 +137,6 @@
             android:exported="false" />
         <activity
             android:name=".MyViewPagerAdapter6"
-            android:exported="false" />
-        <activity
-            android:name=".Tellephone"
             android:exported="false" />
         <activity
             android:name=".About"

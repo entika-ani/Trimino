@@ -45,8 +45,7 @@ Here you will plunge into a fascinating story full of many troubles.
 Find out a fate of  spontaneous sisters who were separated by a blind desire to take over the kingdaom. Fight on behalf of the sisters with your friends and help sisters by winning.
 Have a good time.
 GOOD LUCK!"
-            android:fontFamily="@font/protest"
-            android:textSize="35dp"
+            android:textSize="34dp"
             android:textStyle="bold"
             android:textColor="#B7000000" />
 

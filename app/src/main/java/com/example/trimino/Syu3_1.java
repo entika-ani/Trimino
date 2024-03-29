@@ -27,7 +27,7 @@ public class Syu3_1 extends AppCompatActivity {
     }
 
     public void  mi_hatHet(View v){
-        Intent intent = new Intent(this,Syu2_3.class);
+        Intent intent = new Intent(this,Syu1_1y.class);
         startActivity(intent);
         finish();
     }

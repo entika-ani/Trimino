@@ -12,6 +12,13 @@
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/fon" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        app:srcCompat="@drawable/semya" />
 
     <TextView
 
@@ -26,6 +33,47 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_dab"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/h1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="#5185FBE0"
+            android:foreground="@drawable/pc1"
+            />
+
+        <Button
+            android:id="@+id/h2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="#5185FBE0"
+            android:foreground="@drawable/pc2"
+            />
+        <Button
+            android:id="@+id/h3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="#5185FBE0"
+            android:foreground="@drawable/pc3"
+            />
+        <Button
+            android:id="@+id/h4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="#5185FBE0"
+            android:foreground="@drawable/pc4"
+            />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/et_veradardz"
@@ -41,73 +89,6 @@
         android:text="BACK"
         android:textColor="@color/black"
         android:textStyle="bold|italic" />
-
-
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/esim_3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
-        android:background="#E3D0F1"
-        app:tabTextColor="#000000">
-
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Luna"
-            android:textColor="#000000"
-            android:textSize="20dp"
-            tools:ignore="SpUsage" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Elion"
-            android:textColor="#000000"
-            android:textSize="20dp"
-            tools:ignore="SpUsage" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Faira"
-            android:textColor="#000000"
-            android:textSize="20dp"
-            tools:ignore="SpUsage" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sylphia"
-            android:textColor="#000000"
-            android:textSize="20dp"
-            tools:ignore="SpUsage" />
-
-    </com.google.android.material.tabs.TabLayout>
-
-
-    <androidx.viewpager2.widget.ViewPager2
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/view_pager4"
-        android:layout_below="@+id/esim_3"/>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="0dp"
-        app:srcCompat="@drawable/semya" />
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-150dp"
-        app:srcCompat="@drawable/stroka" />
-
     <Button
         android:id="@+id/butun"
         android:layout_width="360dp"
@@ -117,10 +98,7 @@
         android:layout_marginBottom="10dp"
         android:backgroundTint="#56DC5D88"
         android:text="START"
-        android:textSize="25dp" />
-
-
-
-
+        android:textSize="25dp"
+        android:onClick="startSelectedActivity"/>
 
 </RelativeLayout>

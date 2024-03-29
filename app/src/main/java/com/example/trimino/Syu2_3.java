@@ -21,7 +21,7 @@ public class Syu2_3 extends AppCompatActivity {
     }
 
     public void araj(View v){
-        Intent intent = new Intent(this,Syu3_1.class);
+        Intent intent = new Intent(this,Syu1_1y.class);
         startActivity(intent);
         onPause();
     }

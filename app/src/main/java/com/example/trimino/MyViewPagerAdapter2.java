@@ -9,11 +9,7 @@ import com.example.trimino.fragments.ElionFragment;
 import com.example.trimino.fragments.FairaFragment;
 import com.example.trimino.fragments.LunaFragment;
 import com.example.trimino.fragments.SilfaFragment;
-import com.example.trimino.fragments.gameplaceAll;
-import com.example.trimino.fragments.gameplaceE;
-import com.example.trimino.fragments.gameplaceF;
-import com.example.trimino.fragments.gameplaceW;
-import com.example.trimino.fragments.gameplaceWind;
+
 
 public class MyViewPagerAdapter2 extends FragmentStateAdapter {
     public MyViewPagerAdapter2(@NonNull FragmentActivity fragmentActivity) {

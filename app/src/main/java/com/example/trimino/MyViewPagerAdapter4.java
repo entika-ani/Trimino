@@ -27,6 +27,8 @@ public class MyViewPagerAdapter4 extends FragmentStateAdapter {
     @Override
     public Fragment createFragment(int position) {
         switch (position) {
+            case 0:
+                return new gameplaceW();
             case 1:
                 return new gameplaceE();
             case 2:

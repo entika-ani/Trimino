@@ -6,12 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Syu4_2 extends AppCompatActivity {
+public class Syu1_2y extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_syu42);
+        setContentView(R.layout.activity_syu12y);
     }
 
     public void back(View v){
@@ -19,15 +19,20 @@ public class Syu4_2 extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
-
-    public void araj(View v){
-        Intent intent = new Intent(this,Syu1_2y.class);
+    public void  mi_hatHet(View v){
+        Intent intent = new Intent(this,Syu4_2.class);
         startActivity(intent);
-        onPause();
+        finish();
     }
 
-    public void  mi_hatHet(View v){
-        Intent intent = new Intent(this,Syu4_1.class);
+    public void  ahh(View v){
+        Intent intent = new Intent(this,Syu1_2_1.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void  ashh(View v){
+        Intent intent = new Intent(this,Syu1_2_2.class);
         startActivity(intent);
         finish();
     }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Syu5_1">
+    tools:context=".Syu1_2_1">
 
     <ImageView
 
@@ -54,7 +54,7 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="-33dp"
         android:layout_marginBottom="-47dp"
-        android:text="@string/lunas_ans"
+        android:text="@string/amens1"
         android:textColor="@color/black"
         android:textSize="20dp" />
 
