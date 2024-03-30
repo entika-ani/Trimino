@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class Syu1_verj extends AppCompatActivity {
-
+    static  boolean x = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +22,7 @@ public class Syu1_verj extends AppCompatActivity {
     public void araj(View v){
         Intent intent = new Intent(this,Stories.class);
         startActivity(intent);
+        x = true;
         finish();
     }
 

@@ -1,5 +1,7 @@
 package com.example.trimino;
 
+
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
@@ -20,6 +22,7 @@ import android.widget.Toast;
 
 import com.example.trimino.R;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Wheeel extends AppCompatActivity {
@@ -28,7 +31,12 @@ public class Wheeel extends AppCompatActivity {
     int[] stopPosition = {720, 780, 840, 900, 960, 1020}; // 780 position = 10 points
     int[] winPoints = {50, 10, 20, 100, 90, 70};
     int randPosition = 0;
-    private boolean canSpin = true; // Флаг, разрешающий вращение колеса
+    static boolean again = true;
+
+    static int total = 0;
+    private boolean canSpin = true;
+    static ArrayList<Integer> coins = new ArrayList<>();
+    static int point = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,20 +47,25 @@ public class Wheeel extends AppCompatActivity {
         arrow = findViewById(R.id.arrow);
 
         arrow.setOnClickListener(view -> {
-            if (canSpin) { // Проверка, можно ли вращать колесо
-                randPosition = new Random().nextInt(5 - 0) + 0; // Получение случайной позиции
+            again = true;
+            if (canSpin && again == true) {
+                randPosition = new Random().nextInt(5 - 0) + 0;
                 startSpin();
 
-                // Запуск таймера на 20 минут, после которого снова разрешится вращение
-                new CountDownTimer(1200000, 1000) {
+                new CountDownTimer(120000, 1000) {
                     public void onTick(long millisUntilFinished) {}
 
                     public void onFinish() {
-                        canSpin = true; // Разрешение вращения
+                        canSpin = true;
+                        again = true;
                     }
+
+
                 }.start();
 
-                canSpin = false; // Запрет вращения до истечения времени таймера
+                canSpin = false;
+                again = false;
+
             }
         });
     }
@@ -101,11 +114,22 @@ public class Wheeel extends AppCompatActivity {
 
         TextView winText = dialog.findViewById(R.id.win_text);
         winText.setText("You won " + points + " points");
+        point = Integer.parseInt(points);
+        coins.add(point);
+
+        for (int i = 0; i < coins.size(); i++) {
+            total += coins.get(i);
+
+        }
+
+
+
+
+
 
         Button btn = dialog.findViewById(R.id.button);
         btn.setOnClickListener(view -> {
             dialog.cancel();
-            // Reset rotation for spin the wheel again
             rotation = 0;
             rotationSpeed = 5;
             randPosition = 0;
@@ -115,6 +139,7 @@ public class Wheeel extends AppCompatActivity {
     public void back(View v) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+        again = false;
         finish();
     }
 }

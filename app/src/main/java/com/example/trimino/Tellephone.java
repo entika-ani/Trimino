@@ -1,24 +1,32 @@
 package com.example.trimino;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.StateListDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
-import com.example.trimino.ActivityH1;
-import com.example.trimino.ActivityH2;
-import com.example.trimino.ActivityH3;
-import com.example.trimino.ActivityH4;
-import com.example.trimino.R;
 
 public class Tellephone extends AppCompatActivity {
 
-    private int selectedButtonId = -1; // Идентификатор выбранной кнопки, -1 означает, что ни одна кнопка не выбрана
+     private int selectedButtonId = 0;
+
+   public boolean h111 = false;
+    public boolean h222 = false;
+    public boolean h333 = false;
+    public boolean h444 = false;
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tellephone);
 
@@ -26,56 +34,130 @@ public class Tellephone extends AppCompatActivity {
         Button h2 = findViewById(R.id.h2);
         Button h3 = findViewById(R.id.h3);
         Button h4 = findViewById(R.id.h4);
+        LinearLayout h11 = findViewById(R.id.h11);
+        LinearLayout h22 = findViewById(R.id.h22);
+        LinearLayout h33 = findViewById(R.id.h33);
+        LinearLayout h44 = findViewById(R.id.h44);
 
-        h1.setOnClickListener(new View.OnClickListener() {
+
+      h1.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+              h222 = false;
+              h333 = false;
+              h444 = false;
+              h111 = true;
+              if (h111 == true){
+                  h11.setBackgroundResource(R.drawable.button_background_green);
+                  h22.setBackgroundResource(R.drawable.button_background);
+                  h33.setBackgroundResource(R.drawable.button_background);
+                  h44.setBackgroundResource(R.drawable.button_background);
+              }
+              else{
+                  h11.setBackgroundResource(R.drawable.button_background);
+              }
+
+              selectedButtonId = 1;
+
+          }
+      });
+
+
+
+
+
+
+      h2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                selectedButtonId = R.id.h1;
-            }
-        });
-
-        h2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                selectedButtonId = R.id.h2;
+                selectedButtonId = 2;
+                h222 = true;
+                h333 = false;
+                h444 = false;
+                h111 = false;
+                if (h222 == true){
+                    h22.setBackgroundResource(R.drawable.button_background_green);
+                    h11.setBackgroundResource(R.drawable.button_background);
+                    h33.setBackgroundResource(R.drawable.button_background);
+                    h44.setBackgroundResource(R.drawable.button_background);
+                }
+                else{
+                    h22.setBackgroundResource(R.drawable.button_background);
+                }
             }
         });
 
         h3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                selectedButtonId = R.id.h3;
+                selectedButtonId =3;
+                h222 = false;
+                h333 = true;
+                h444 = false;
+                h111 = false;
+                if (h333 == true){
+                    h33.setBackgroundResource(R.drawable.button_background_green);
+                    h22.setBackgroundResource(R.drawable.button_background);
+                    h11.setBackgroundResource(R.drawable.button_background);
+                    h44.setBackgroundResource(R.drawable.button_background);
+                }
+                else{
+                    h33.setBackgroundResource(R.drawable.button_background);
+                }
             }
         });
 
         h4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                selectedButtonId = R.id.h4;
+                selectedButtonId = 4;
+                h222 = false;
+                h333 = true;
+                h444 = true;
+                h111 = false;
+                if (h444 == true){
+                    h44.setBackgroundResource(R.drawable.button_background_green);
+                    h22.setBackgroundResource(R.drawable.button_background);
+                    h33.setBackgroundResource(R.drawable.button_background);
+                    h11.setBackgroundResource(R.drawable.button_background);
+                }
+                else{
+                    h44.setBackgroundResource(R.drawable.button_background);
+                }
             }
         });
     }
 
-  /*  // Метод для обработки нажатия кнопки "START"
-   public void startSelectedActivity(View view) {
-        if (selectedButtonId != -1) { // Проверяем, была ли выбрана кнопка
-            // В зависимости от выбранной кнопки, запускаем соответствующую активность
-            switch (selectedButtonId) {
-                case R.id.h1:
-                    startActivity(new Intent(this, ActivityH1.class));
-                    break;
-                case R.id.h2:
-                    startActivity(new Intent(this, ActivityH2.class));
-                    break;
-                case R.id.h3:
-                    startActivity(new Intent(this, ActivityH3.class));
-                    break;
-                case R.id.h4:
-                    startActivity(new Intent(this, ActivityH4.class));
-                    break;
-            }
-        }
-    }*/
+
+
+    public void select(View v){
+      if (selectedButtonId == 1){
+          Intent intent = new Intent(this, ActivityH1.class);
+          startActivity(intent);
+          onPause();
+      } else if (selectedButtonId == 2) {
+          Intent intent = new Intent(this, ActivityH2.class);
+          startActivity(intent);
+          onPause();
+      }else if (selectedButtonId == 3) {
+          Intent intent = new Intent(this, ActivityH3.class);
+          startActivity(intent);
+          onPause();
+      }
+      else{
+          Intent intent = new Intent(this, ActivityH4.class);
+          startActivity(intent);
+          onPause();
+      }
+
+    }
+
+
+    public void goBack(View v){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        onPause();
+    }
 }
 
 

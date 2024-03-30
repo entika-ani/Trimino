@@ -51,12 +51,12 @@
         android:textStyle="bold|italic" />
 
     <Button
-        android:id="@+id/h3"
+        android:id="@+id/h4"
         android:layout_width="90dp"
         android:layout_height="90dp"
         android:layout_margin="20dp"
         android:backgroundTint="#5185FBE0"
-        android:foreground="@drawable/pc1"
+        android:foreground="@drawable/pc4"
         android:layout_below="@+id/text_dab"
         />
     <TextView
