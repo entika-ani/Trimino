@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/text_dab"
         android:layout_centerHorizontal="true"
-        android:layout_marginRight="26dp"
+        android:layout_marginRight="27dp"
         android:layout_marginBottom="12dp"
         android:layout_toLeftOf="@+id/text_dab"
         android:backgroundTint="@color/white"
@@ -51,39 +51,75 @@
         android:layout_below="@+id/text_dab"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/h1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="20dp"
-            android:backgroundTint="#5185FBE0"
-            android:foreground="@drawable/pc1"
-            />
+        <LinearLayout
+            android:id="@+id/h11"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_background">
+            <Button
+                android:id="@+id/h1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="H1"
+                android:backgroundTint="#5185FBE0"
+                android:foreground="@drawable/pc1"
+                />
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/h2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="20dp"
-            android:backgroundTint="#5185FBE0"
-            android:foreground="@drawable/pc2"
-            />
-        <Button
-            android:id="@+id/h3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="20dp"
-            android:backgroundTint="#5185FBE0"
-            android:foreground="@drawable/pc3"
-            />
-        <Button
-            android:id="@+id/h4"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="20dp"
-            android:backgroundTint="#5185FBE0"
-            android:foreground="@drawable/pc4"
-            />
+        <LinearLayout
+            android:id="@+id/h22"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_background">
+            <Button
+                android:id="@+id/h2"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="H1"
+                android:backgroundTint="#5185FBE0"
+                android:foreground="@drawable/pc2"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/h33"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_background">
+            <Button
+                android:id="@+id/h3"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="H1"
+                android:backgroundTint="#5185FBE0"
+                android:foreground="@drawable/pc3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/h44"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_background">
+            <Button
+                android:id="@+id/h4"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="H1"
+                android:backgroundTint="#5185FBE0"
+                android:foreground="@drawable/pc4"
+                />
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -151,6 +187,7 @@
         android:id="@+id/selectWindPage"
         android:layout_width="match_parent"
         android:layout_height="65dp"
+        android:onClick="Help_us"
         android:layout_alignBottom="@+id/bomj1"
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"

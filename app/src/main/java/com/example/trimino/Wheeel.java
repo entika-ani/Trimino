@@ -122,10 +122,10 @@ public class Wheeel extends AppCompatActivity {
 
         }
 
-
-
-
-
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.putExtra("prize", points); // points - это сумма приза
+        startActivity(intent);
+        finish();
 
         Button btn = dialog.findViewById(R.id.button);
         btn.setOnClickListener(view -> {

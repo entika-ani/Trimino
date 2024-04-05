@@ -5,15 +5,13 @@ import static com.example.trimino.Wheeel.again;
 import static com.example.trimino.Wheeel.total;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.widget.Toast;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private TextView sumTextView;
@@ -27,27 +25,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        sumTextView = findViewById(R.id.sumTextView);
-        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        initialSum = sharedPreferences.getInt("initialSum", 100); // Значение по умолчанию - 100
-        sumTextView.setText("Coins: " + initialSum);
 
-        // Получаем количество монет из SharedPreferences
-        SharedPreferences prefs = getSharedPreferences("coin_prefs", MODE_PRIVATE);
-        int coinsFromSy1_1 = prefs.getInt("coins_sy1_1", 0); // Получаем количество монет из Syu1.1
-        int coinsFromSy1_2 = prefs.getInt("coins_sy1_2", 0); // Получаем количество монет из Syu1.2
-        // Вычисляем общее количество монет
-        if (x == true){
-            initialSum = 150;
-        }
-        else {
-            initialSum = 0;
-        }
-        initialSum += total;
-        total = 0;
 
-        sumTextView.setText("Coins: " + initialSum);
+        // Получаем сумму приза из Intent, если она была передана
+        Intent intent = getIntent();
+        if (intent != null && intent.hasExtra("prize")) {
+            int prize = intent.getIntExtra("prize", 0); // Получаем сумму приза, значение по умолчанию - 0
+            // Добавляем сумму приза к общей сумме монет в MainActivity
+            total += prize;
+            // Обновляем отображение суммы монет в вашем пользовательском интерфейсе
+            TextView sumTextView = findViewById(R.id.sumTextView);
+            sumTextView.setText("Coins: " + total);
+        }
     }
+
+
 
     // Метод для сохранения initialSum в SharedPreferences
     private void saveInitialSum(int sum) {
@@ -69,36 +61,33 @@ public class MainActivity extends AppCompatActivity {
         sumTextView.setText("Coins: " + initialSum);
     }
 
-
-
-
-    public void startNEWActivity(View v) {
-        Intent intent = new Intent(this, games.class);
-        startActivity(intent);
-    }
-
     public void openWheel(View v) {
         if (again == true){
             Intent intent = new Intent(this, Wheeel.class);
             startActivity(intent);
+        }else {
+            Intent intent = new Intent(this, Wait.class);
+            startActivity(intent);
         }
-        else{
-
-        }
-
-
     }
 
     public void startStories(View v) {
         Intent intent = new Intent(this, Stories.class);
-        startActivity(intent);
-
-
+        startActivityForResult(intent, 1); // Запуск активности с ожиданием результата
     }
 
-    public void game(View v) {
-        Intent intent = new Intent(this, GamePlay1.class);
-        startActivity(intent);
+    // Метод, который будет вызван при возвращении результата из другой активности
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1) { // Проверяем, что результат пришел от нужной активности
+            if (resultCode == RESULT_OK) { // Проверяем успешность выполнения активности
+                int selectedValue = data.getIntExtra("selectedValue", 0); // Получаем выбранное значение из активности
+                initialSum += selectedValue; // Добавляем выбранное значение к общей сумме монет
+                saveInitialSum(initialSum); // Сохраняем новую сумму в SharedPreferences
+                sumTextView.setText("Coins: " + initialSum); // Обновляем отображение суммы монет
+            }
+        }
     }
 
     public void startAbout(View v) {
@@ -110,6 +99,4 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Tellephone.class);
         startActivity(intent);
     }
-
-
 }

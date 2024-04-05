@@ -156,7 +156,7 @@ public class Tellephone extends AppCompatActivity {
     public void goBack(View v){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
-        onPause();
+        finish();
     }
 }
 
