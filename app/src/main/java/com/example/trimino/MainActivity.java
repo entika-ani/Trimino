@@ -37,6 +37,16 @@ public class MainActivity extends AppCompatActivity {
             TextView sumTextView = findViewById(R.id.sumTextView);
             sumTextView.setText("Coins: " + total);
         }
+
+        Intent intentch = getIntent();
+        if (intentch != null && intent.hasExtra("coins")) {
+            int coins = intent.getIntExtra("coins", 0); // Получаем количество монет, значение по умолчанию - 0
+            // Добавляем количество монет к общей сумме в MainActivity
+            total += coins;
+            // Обновляем отображение суммы монет в вашем пользовательском интерфейсе
+            TextView sumTextView = findViewById(R.id.sumTextView);
+            sumTextView.setText("Coins: " + total);
+        }
     }
 
 

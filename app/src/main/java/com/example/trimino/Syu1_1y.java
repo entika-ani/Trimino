@@ -38,6 +38,7 @@ public class Syu1_1y extends AppCompatActivity {
         editor.apply(); // Применяем изменения
 
 
+
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,8 +70,9 @@ public class Syu1_1y extends AppCompatActivity {
         finish();
     }
 
-    public void  ah(View v){
-        Intent intent = new Intent(this,Syu1_1_1.class);
+    public void ah(View v) {
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.putExtra("coins", 50); // Передаем количество монет через Intent
         startActivity(intent);
         finish();
     }
