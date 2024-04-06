@@ -21,10 +21,10 @@
 
     <TextView
         android:id="@+id/sumTextView"
-        android:layout_width="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_width="188dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/WAR_PRINCEESS"
+        android:layout_centerHorizontal="true"
         android:gravity="center"
         android:text="Coins"
         android:textSize="24sp"

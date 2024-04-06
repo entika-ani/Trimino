@@ -1,18 +1,15 @@
 package com.example.trimino;
+
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Syu1_1y extends AppCompatActivity {
 
     private Button lastClickedButton;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +34,6 @@ public class Syu1_1y extends AppCompatActivity {
         editor.putInt("coins_sy1_1", 50); // Сохраняем 50 монет
         editor.apply(); // Применяем изменения
 
-
-
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,27 +53,27 @@ public class Syu1_1y extends AppCompatActivity {
         }
     }
 
-
     public void back(View v){
         Intent intent = new Intent(this, Stories.class);
         startActivity(intent);
         finish();
     }
-    public void  mi_hatHet(View v){
-        Intent intent = new Intent(this,Syu2_3.class);
+
+    public void mi_hatHet(View v){
+        Intent intent = new Intent(this, Syu2_3.class);
         startActivity(intent);
         finish();
     }
 
     public void ah(View v) {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Syu1_1_1.class);
         intent.putExtra("coins", 50); // Передаем количество монет через Intent
         startActivity(intent);
         finish();
     }
 
-    public void  ash(View v){
-        Intent intent = new Intent(this,Syu1_1_2.class);
+    public void ash(View v){
+        Intent intent = new Intent(this, Syu1_1_2.class);
         startActivity(intent);
         finish();
     }
