@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.preference.PreferenceManager;
 
 public class MainActivity extends AppCompatActivity {
+
+    private boolean isSoundOn = true;
     private TextView sumTextView;
     private int initialSum = 100;
     private SharedPreferences sharedPreferences;
@@ -18,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Запуск MusicService
+        Intent serviceIntent = new Intent(this, MusicService.class);
+        startService(serviceIntent);
 
         sumTextView = findViewById(R.id.sumTextView);
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
@@ -98,4 +104,5 @@ public class MainActivity extends AppCompatActivity {
         editor.putInt("total", total);
         editor.apply();
     }
+
 }

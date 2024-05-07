@@ -118,15 +118,6 @@
             android:text="🪙"
             android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="35dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
-            android:text="🛒"
-            android:textSize="30dp" />
     </LinearLayout>
 
     <Button
@@ -136,7 +127,7 @@
         android:layout_below="@+id/sumTextView"
         android:layout_marginTop="0dp"
         android:backgroundTint="@color/white"
-        android:text="⚙️" />
+        android:text="🔊" />
 
 
     <Button
