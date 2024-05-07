@@ -140,7 +140,7 @@ public class Arajin extends AppCompatActivity {
     }
 
     public void Back(View v){
-        Intent intent = new Intent(this, games.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
     }

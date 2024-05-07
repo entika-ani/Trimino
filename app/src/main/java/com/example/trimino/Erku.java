@@ -119,20 +119,20 @@ public class Erku extends AppCompatActivity {
 
     public void Help_us(View v){
         if (selectedButtonId == 1){
-            Intent intent = new Intent(this, GamePlay1.class);
+            Intent intent = new Intent(this, Foniqar.class);
             startActivity(intent);
             onPause();
         } else if (selectedButtonId == 2) {
-            Intent intent = new Intent(this, GamePlay1.class);
+            Intent intent = new Intent(this, Foniqar.class);
             startActivity(intent);
             onPause();
         }else if (selectedButtonId == 3) {
-            Intent intent = new Intent(this, GamePlay1.class);
+            Intent intent = new Intent(this, Foniqar.class);
             startActivity(intent);
             onPause();
         }
         else{
-            Intent intent = new Intent(this, GamePlay1.class);
+            Intent intent = new Intent(this, Foniqar.class);
             startActivity(intent);
             onPause();
         }
@@ -140,7 +140,7 @@ public class Erku extends AppCompatActivity {
     }
 
     public void Back(View v){
-        Intent intent = new Intent(this, games.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
     }
