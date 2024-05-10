@@ -121,24 +121,10 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button10"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/sumTextView"
-        android:layout_marginTop="0dp"
-        android:backgroundTint="@color/white"
-        android:text="log out"
-        android:textSize="7.5dp"
-        android:textColor="@color/black"
-        android:onClick="logout"/>
-
-
-
-    <Button
         android:id="@+id/button8"
         android:layout_width="60dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/button10"
+        android:layout_below="@+id/sumTextView"
         android:layout_marginTop="0dp"
         android:backgroundTint="@color/white"
         android:text="🔊" />

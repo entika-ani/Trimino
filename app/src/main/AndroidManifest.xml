@@ -10,7 +10,6 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
@@ -23,25 +22,13 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/b"
         android:supportsRtl="true"
-        android:theme="@style/Bezglav"
+        android:theme="@style/Theme.Trimino"
         tools:targetApi="31">
         <activity
-            android:name=".Foniqar"
-            android:exported="false" />
-        <activity
-            android:name=".place.Place6x6"
-            android:exported="false" />
-        <activity
-            android:name=".place.Place5x5"
-            android:exported="false" />
-        <activity
-            android:name=".place.Place4x4"
-            android:exported="false" />
-        <activity
-            android:name=".place.Place3x3"
-            android:exported="false" />
-        <activity
             android:name=".MusicService"
+            android:exported="false" />
+        <activity
+            android:name=".MediaPlayer"
             android:exported="false" />
         <activity
             android:name=".ForgetPass"
