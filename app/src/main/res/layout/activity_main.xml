@@ -21,7 +21,7 @@
 
     <TextView
         android:id="@+id/sumTextView"
-        android:layout_width="188dp"
+        android:layout_width="188sp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/WAR_PRINCEESS"
         android:layout_centerHorizontal="true"
@@ -33,10 +33,10 @@
         android:id="@+id/WAR_PRINCEESS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="0.5dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="0.5sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginBottom="16sp"
         android:fontFamily="@font/protest"
         android:text="WAR PRINCEESS"
         android:textColor="@color/black"
@@ -44,12 +44,12 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="337dp"
-        android:layout_height="280dp"
-        android:layout_marginStart="30dp"
+        android:layout_width="337sp"
+        android:layout_height="280sp"
+        android:layout_marginStart="30sp"
         android:layout_below="@+id/sumTextView"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5sp"
+        android:layout_marginEnd="20sp"
         app:srcCompat="@drawable/bam" />
 
 
@@ -59,9 +59,9 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/imageView2"
-        android:layout_marginStart="65dp"
-        android:layout_marginEnd="65dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginStart="65sp"
+        android:layout_marginEnd="65sp"
+        android:layout_marginBottom="10sp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/protest"
         android:onClick="startNEWActivity"
@@ -76,16 +76,16 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/button1"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="65dp"
-        android:layout_marginBottom="65dp"
+        android:layout_marginStart="65sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginEnd="65sp"
+        android:layout_marginBottom="65sp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/protest"
         android:onClick="startAbout"
         android:text="About game"
         android:textColor="@color/black"
-        android:textSize="35dp"
+        android:textSize="35sp"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -93,52 +93,64 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="0sp"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/button5"
-            android:layout_width="35dp"
+            android:layout_width="35sp"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="10sp"
             android:layout_weight="1"
             android:backgroundTint="@color/white"
             android:onClick="startLetters"
             android:text="💌"
-            android:textSize="30dp" />
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/button6"
-            android:layout_width="35dp"
-            android:layout_height="65dp"
-            android:layout_margin="10dp"
+            android:layout_width="35sp"
+            android:layout_height="65sp"
+            android:layout_margin="10sp"
             android:layout_weight="1"
             android:onClick="openWheel"
             android:backgroundTint="#FFFFFF"
             android:text="🪙"
-            android:textSize="30dp" />
+            android:textSize="30sp" />
 
     </LinearLayout>
 
     <Button
         android:id="@+id/button8"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
+        android:layout_width="60sp"
+        android:layout_height="50sp"
         android:layout_below="@+id/sumTextView"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="0sp"
         android:backgroundTint="@color/white"
-        android:text="🔊" />
+        android:text="🔊"
+        android:onClick="toggleMusic"/>
 
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
+        android:layout_width="60sp"
+        android:layout_height="50sp"
         android:layout_below="@+id/button8"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="6sp"
         android:backgroundTint="@color/white"
         android:onClick="startStories"
         android:text="✒️" />
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="61sp"
+        android:layout_height="50sp"
+        android:layout_below="@+id/button9"
+        android:layout_marginTop="6sp"
+        android:backgroundTint="@color/white"
+        android:onClick="logout"
+        android:text="log"
+        android:textColor="#37058F"
+        android:textSize="8.9sp"/>
 
 
 </RelativeLayout>

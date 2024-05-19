@@ -37,17 +37,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/win_popup_bg"
-        android:text="Spin more"
+        android:text="Take it"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/win_text" />
-
-
-
-
-
-
-
+    
 </androidx.constraintlayout.widget.ConstraintLayout>

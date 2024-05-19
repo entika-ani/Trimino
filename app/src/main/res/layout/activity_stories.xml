@@ -60,7 +60,7 @@
             android:backgroundTint="@color/white"
             android:text="𓆩In the cerulean garden𓆪"
             android:textColor="#3E3C3C"
-            android:onClick="newej"
+            android:onClick="g1"
             android:textSize="23dp"
             android:textStyle="bold" />
 
@@ -70,7 +70,7 @@
             android:layout_height="65dp"
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/white"
-            android:onClick="syu2"
+            android:onClick="g2"
             android:text="𓆩In the cerulean garden_2𓆪"
             android:textColor="#3E3C3C"
             android:textSize="23dp"
@@ -84,7 +84,8 @@
             android:text="𓆩𓆪"
             android:textColor="#3E3C3C"
             android:textSize="23dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="g3"/>
         <Button
             android:id="@+id/gl5"
             android:layout_width="match_parent"
@@ -94,7 +95,8 @@
             android:text="𓆩𓆪"
             android:textColor="#3E3C3C"
             android:textSize="23dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="g4"/>
         <Button
             android:id="@+id/gl6"
             android:layout_width="match_parent"
@@ -104,7 +106,8 @@
             android:text="𓆩𓆪"
             android:textColor="#3E3C3C"
             android:textSize="23dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="g5"/>
         <Button
             android:id="@+id/gl7"
             android:layout_width="match_parent"
@@ -114,7 +117,8 @@
             android:text="𓆩𓆪"
             android:textColor="#3E3C3C"
             android:textSize="23dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="g6"/>
         <Button
             android:id="@+id/gl8"
             android:layout_width="match_parent"
@@ -124,7 +128,8 @@
             android:text="𓆩𓆪"
             android:textColor="#3E3C3C"
             android:textSize="23dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="g7"/>
         <Button
             android:id="@+id/gl9"
             android:layout_width="match_parent"
@@ -134,7 +139,8 @@
             android:text="𓆩𓆪"
             android:textColor="#3E3C3C"
             android:textSize="23dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="g8"/>
         <Button
             android:id="@+id/gl10"
             android:layout_width="match_parent"
@@ -144,7 +150,8 @@
             android:text="𓆩𓆪"
             android:textColor="#3E3C3C"
             android:textSize="23dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="g9"/>
         <Button
             android:id="@+id/gl11"
             android:layout_width="match_parent"
@@ -154,10 +161,8 @@
             android:text="𓆩𓆪"
             android:textColor="#3E3C3C"
             android:textSize="23dp"
-            android:textStyle="bold" />
-
-
-
+            android:textStyle="bold"
+            android:onClick="g10"/>
     </LinearLayout>
 
 

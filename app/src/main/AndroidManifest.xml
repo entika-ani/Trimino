@@ -25,10 +25,85 @@
         android:theme="@style/Theme.Trimino"
         tools:targetApi="31">
         <activity
-            android:name=".MusicService"
+            android:name=".heraxos.DarkGreen7"
             android:exported="false" />
         <activity
-            android:name=".MediaPlayer"
+            android:name=".heraxos.DarkGreen6"
+            android:exported="false" />
+        <activity
+            android:name=".heraxos.DarkGreen5"
+            android:exported="false" />
+        <activity
+            android:name=".heraxos.DarkGreen4"
+            android:exported="false" />
+        <activity
+            android:name=".heraxos.DarkGreen3"
+            android:exported="false" />
+        <activity
+            android:name=".heraxos.DarkGreen2"
+            android:exported="false" />
+        <activity
+            android:name=".heraxos.Dark_green"
+            android:exported="false" />
+        <activity
+            android:name=".glux1.F4"
+            android:exported="false" />
+        <activity
+            android:name=".glux1.F3"
+            android:exported="false" />
+        <activity
+            android:name=".glux1.F2"
+            android:exported="false" />
+        <activity
+            android:name=".glux10.S1"
+            android:exported="false" />
+        <activity
+            android:name=".glux9.J1"
+            android:exported="false" />
+        <activity
+            android:name=".glux8.I1"
+            android:exported="false" />
+        <activity
+            android:name=".glux7.D1"
+            android:exported="false" />
+        <activity
+            android:name=".glux6.C1"
+            android:exported="false" />
+        <activity
+            android:name=".glux5.A1"
+            android:exported="false" />
+        <activity
+            android:name=".glux4.B1"
+            android:exported="false" />
+        <activity
+            android:name=".glux3.E1"
+            android:exported="false" />
+        <activity
+            android:name=".glux2.G1"
+            android:exported="false" />
+        <activity
+            android:name=".glux1.F1"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentConfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Telefono"
+            android:exported="false" />
+        <activity
+            android:name=".place.Place4x4"
+            android:exported="false" />
+        <activity
+            android:name=".place.Place6x6"
+            android:exported="false" />
+        <activity
+            android:name=".place.Place5x5"
+            android:exported="false" />
+        <activity
+            android:name=".place.Place3x3"
             android:exported="false" />
         <activity
             android:name=".ForgetPass"
@@ -213,6 +288,9 @@
         </activity>
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Foniqar"
             android:exported="false" />
     </application>
 

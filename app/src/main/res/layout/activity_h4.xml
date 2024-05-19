@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityH1">
+    tools:context=".ActivityH4">
 
     <ImageView
         android:id="@+id/imageView"
@@ -22,12 +22,11 @@
         app:srcCompat="@drawable/semya" />
 
     <TextView
-
         android:id="@+id/text_dab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Chats"
-        android:textSize="55dp"
+        android:textSize="55sp"
         android:textColor="@color/black"
         android:fontFamily="@font/protest"
         android:gravity="center"
@@ -59,12 +58,13 @@
         android:foreground="@drawable/pc4"
         android:layout_below="@+id/text_dab"
         />
+
     <TextView
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sylpha"
-        android:textSize="45dp"
+        android:textSize="45sp"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:layout_below="@+id/text_dab"
@@ -75,16 +75,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="online"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textColor="#EE478104"
         android:layout_below="@+id/text1"
         android:layout_marginLeft="150dp"/>
-    <TextView
 
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="online"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textColor="#EE478104"
         android:layout_below="@+id/text1"
         android:layout_marginLeft="150dp"/>
@@ -96,7 +96,6 @@
         android:layout_alignParentBottom="true"
         android:backgroundTint="#BAC2A3AA"
         android:layout_marginBottom="0dp" />
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -126,24 +125,28 @@
         android:layout_below="@+id/h4"
         android:layout_above="@+id/nuton1"
         android:orientation="vertical">
+
         <Button
             android:id="@+id/b1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:layout_marginLeft="20dp"/>
+
         <Button
             android:id="@+id/b2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:layout_marginLeft="310dp"/>
+
         <Button
             android:id="@+id/b3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:layout_marginLeft="20dp"/>
+
         <Button
             android:id="@+id/b4"
             android:layout_width="wrap_content"
@@ -151,5 +154,7 @@
             android:backgroundTint="@color/white"
             android:layout_marginLeft="310dp"/>
 
+
     </LinearLayout>
+
 </RelativeLayout>

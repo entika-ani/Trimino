@@ -39,7 +39,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="33dp"
-            android:backgroundTint="#75FFFFFF"
+            android:backgroundTint="#A8FFFFFF"
             android:text="Reset"
             android:textColor="@color/black"/>
     </RelativeLayout>
@@ -60,10 +60,11 @@
             android:padding="5dp"
             android:scaleType="fitXY"
             android:tag="0"
+            android:onClick="click"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#4AFFFFFF"/>
+            android:backgroundTint="#54FFFFFF"/>
 
         <Button
             android:id="@+id/button_01"
@@ -72,6 +73,7 @@
             android:layout_margin="5sp"
             android:padding="5dp"
             android:tag="1"
+            android:onClick="click"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
@@ -83,18 +85,19 @@
             android:layout_height="12dp"
             android:layout_margin="5sp"
             android:padding="5dp"
+            android:onClick="click"
             android:tag="2"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#4AFFFFFF"/>
+            android:backgroundTint="#52FFFFFF"/>
 
         <Button
             android:id="@+id/button_10"
             android:layout_width="23dp"
             android:layout_height="12dp"
             android:layout_margin="5sp"
-
+            android:onClick="click"
             android:padding="5dp"
             android:tag="3"
             app:layout_columnWeight="1"
@@ -107,7 +110,7 @@
             android:layout_width="23dp"
             android:layout_height="12dp"
             android:layout_margin="5sp"
-
+            android:onClick="click"
             android:padding="5dp"
             android:tag="4"
             app:layout_columnWeight="1"
@@ -120,7 +123,7 @@
             android:layout_width="23dp"
             android:layout_height="12dp"
             android:layout_margin="5sp"
-
+            android:onClick="click"
             android:padding="5dp"
             android:tag="5"
             app:layout_columnWeight="1"
@@ -133,7 +136,7 @@
             android:layout_width="23dp"
             android:layout_height="12dp"
             android:layout_margin="5sp"
-
+            android:onClick="click"
             android:padding="5dp"
             android:tag="6"
             app:layout_columnWeight="1"
@@ -146,7 +149,7 @@
             android:layout_width="23dp"
             android:layout_height="12dp"
             android:layout_margin="5sp"
-
+            android:onClick="click"
             android:padding="5dp"
             android:tag="7"
             app:layout_columnWeight="1"
@@ -161,6 +164,7 @@
             android:layout_height="12dp"
             android:layout_margin="5sp"
             android:padding="5dp"
+            android:onClick="click"
             android:tag="8"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"

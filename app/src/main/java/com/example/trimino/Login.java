@@ -27,6 +27,7 @@ public class Login extends AppCompatActivity {
     EditText emailEditText;
     TextView error;
     EditText passwordEditText;
+    private boolean isMediaPlayerRunning = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,16 +45,18 @@ public class Login extends AppCompatActivity {
         boolean isGuestMode = sharedPreferences.getBoolean("isGuestMode", false);
 
         if (isLoggedIn && !isGuestMode) {
-            startActivity(new Intent(this, MainActivity.class));
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.putExtra("mediaPlayer", getIntent().getBooleanExtra("mediaPlayer", false));
+            startActivity(intent);
             finish();
         } else {
             // Continue with your regular flow
         }
 
-
         Intent intent = getIntent();
         if (intent != null) {
             Login.GuestMode = intent.getBooleanExtra("GuestMode", false);
+            isMediaPlayerRunning = intent.getBooleanExtra("mediaPlayer", false);
         }
     }
 
@@ -74,6 +77,7 @@ public class Login extends AppCompatActivity {
                                 editor.apply();
 
                                 Intent intent = new Intent(Login.this, MainActivity.class);
+                                intent.putExtra("mediaPlayer", isMediaPlayerRunning);
                                 startActivity(intent);
                             } else if (user != null && !user.isEmailVerified()) {
                                 error.setText("Please verify your email before logging in");
@@ -85,7 +89,6 @@ public class Login extends AppCompatActivity {
                     }
                 });
     }
-
 
     public void Register(View v) {
         Intent intent = new Intent(this, Register.class);
@@ -104,6 +107,7 @@ public class Login extends AppCompatActivity {
         editor.apply();
 
         Intent intent = new Intent(this, MainActivity.class);
+        intent.putExtra("mediaPlayer", isMediaPlayerRunning);
         GuestMode = true;
         startActivity(intent);
     }

@@ -30,7 +30,18 @@
         <item name="android:layout_height">5dp</item>
     </style>
 
+    <style name="KeypadButton">
+        <item name="android:layout_width">90sp</item>
+        <item name="android:layout_height">90sp</item>
+        <item name="android:layout_margin">5sp</item>
+        <item name="android:backgroundTint">#6AFFFF99</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
 
-
+    <style name="Widget.Theme.Trimino.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
 
 </resources>

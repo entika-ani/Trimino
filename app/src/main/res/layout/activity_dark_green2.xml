@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".heraxos.Dark_green"
+    android:id="@+id/darkGreenLayout"
+    android:background="@drawable/darkgreen">
+
+
+    <ImageView
+        android:id="@+id/nav"
+        android:layout_width="wrap_content"
+        android:layout_height="508dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-70dp"
+        android:layout_marginEnd="-39dp"
+        android:src="@drawable/nav" />
+
+
+    <ImageView
+        android:id="@+id/Elion"
+        android:layout_width="375dp"
+        android:layout_height="608dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/elion" />
+
+    <ImageView
+        android:id="@+id/xosq1"
+        android:layout_width="match_parent"
+        android:layout_height="423dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-132dp"
+        android:src="@drawable/block" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="144dp"
+        android:layout_alignTop="@+id/xosq1"
+        android:layout_alignBottom="@+id/xosq1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="151dp"
+        android:text="and I wanted to become a queen who would change our world for the better"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+</RelativeLayout>

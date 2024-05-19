@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -14,7 +13,6 @@
         app:srcCompat="@drawable/fon" />
 
     <TextView
-
         android:id="@+id/text_dab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,147 +22,201 @@
         android:fontFamily="@font/protest"
         android:gravity="center"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="15sp"
         />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_dab"
         android:orientation="vertical">
+
         <LinearLayout
-            android:id="@+id/h11"
-            android:layout_width="105dp"
-            android:layout_height="105dp"
-            android:layout_margin="20dp"
-            android:background="@drawable/button_background">
-            <Button
-                android:id="@+id/h1"
-                android:layout_gravity="center"
-                android:layout_marginLeft="2dp"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:onClick="H1"
-                android:backgroundTint="#5185FBE0"
-                android:foreground="@drawable/pc1"
-                />
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_margin="10sp"
+                android:src="@drawable/pc1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:fontFamily="@font/protest"
+                android:text="Luna"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100sp"
+                    android:layout_marginRight="10sp"
+                    android:text="1500 "
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+
+                <ImageView
+                    android:layout_width="50sp"
+                    android:layout_height="80sp"
+                    android:src="@drawable/ic_coins" />
+            </LinearLayout>
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:src="@drawable/pc2"
+                android:layout_margin="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elion"
+                android:fontFamily="@font/protest"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:layout_margin="10sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="250"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="100sp"
+                    android:layout_marginRight="10sp"/>
+
+
+                <ImageView
+                    android:layout_width="50sp"
+                    android:layout_height="80sp"
+                    android:src="@drawable/ic_coins" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:src="@drawable/pc3"
+                android:layout_margin="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faira"
+                android:fontFamily="@font/protest"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:layout_margin="10sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="100sp"
+                    android:layout_marginRight="10sp"/>
+
+                <ImageView
+                    android:layout_width="50sp"
+                    android:layout_height="80sp"
+                    android:src="@drawable/ic_coins" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:src="@drawable/pc4"
+                android:layout_margin="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sylphia"
+                android:fontFamily="@font/protest"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:layout_margin="10sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginRight="10sp"/>
 
 
 
-        <LinearLayout
-            android:id="@+id/h22"
-            android:layout_width="105dp"
-            android:layout_height="105dp"
-            android:layout_margin="20dp"
-            android:background="@drawable/button_background">
-            <Button
-                android:id="@+id/h2"
-                android:layout_gravity="center"
-                android:layout_marginLeft="2dp"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:onClick="H1"
-                android:backgroundTint="#5185FBE0"
-                android:foreground="@drawable/pc2"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/h33"
-            android:layout_width="105dp"
-            android:layout_height="105dp"
-            android:layout_margin="20dp"
-            android:background="@drawable/button_background">
-            <Button
-                android:id="@+id/h3"
-                android:layout_gravity="center"
-                android:layout_marginLeft="2dp"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:onClick="H1"
-                android:backgroundTint="#5185FBE0"
-                android:foreground="@drawable/pc3"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/h44"
-            android:layout_width="105dp"
-            android:layout_height="105dp"
-            android:layout_margin="20dp"
-            android:background="@drawable/button_background">
-            <Button
-                android:id="@+id/h4"
-                android:layout_gravity="center"
-                android:layout_marginLeft="2dp"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:onClick="H1"
-                android:backgroundTint="#5185FBE0"
-                android:foreground="@drawable/pc4"
-                />
+                <ImageView
+                    android:layout_width="50sp"
+                    android:layout_height="80sp"
+                    android:src="@drawable/ic_coins" />
+            </LinearLayout>
         </LinearLayout>
 
     </LinearLayout>
-    <LinearLayout
-        android:id="@+id/bomj1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/text_dab"
-        android:orientation="vertical"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="20dp">
-
-        <TextView
-            android:id="@+id/xosq1"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="Luna"
-            android:fontFamily="@font/protest"
-            android:textSize="30dp"
-            android:textColor="@color/black"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true" />
-
-
-        <TextView
-            android:id="@+id/xosq2"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="Elion"
-            android:fontFamily="@font/protest"
-            android:textSize="35dp"
-            android:textColor="@color/black"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="80dp"/>
-
-        <TextView
-            android:id="@+id/xosq3"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="Faira"
-            android:fontFamily="@font/protest"
-            android:textSize="35dp"
-            android:textColor="@color/black"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="80dp"/>
-
-        <TextView
-            android:id="@+id/xosq4"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="Sylphia"
-            android:fontFamily="@font/protest"
-            android:textSize="30dp"
-            android:textColor="@color/black"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="80dp"/>
-
-
-    </LinearLayout>
-
-
 
     <Button
         android:id="@+id/et_veradardz"
@@ -180,6 +232,7 @@
         android:text="BACK"
         android:textColor="@color/black"
         android:textStyle="bold|italic" />
+
     <Button
         android:id="@+id/butun"
         android:layout_width="360dp"
@@ -191,7 +244,5 @@
         android:text="START"
         android:onClick="select"
         android:textSize="25dp"/>
-
-
 
 </RelativeLayout>
