@@ -1,16 +1,17 @@
 package com.example.trimino;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.TextView;
 
+import com.example.trimino.about.About_game1;
+
 public class Splash extends AppCompatActivity {
     TextView appname;
-    private MediaPlayer mediaPlayer;
+    public static MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,16 +19,11 @@ public class Splash extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         appname = findViewById(R.id.appname);
-        appname.animate().translationY(-1300).setDuration(2700).setStartDelay(3);
-        mediaPlayer = MediaPlayer.create(this, R.raw.hero);
-        mediaPlayer.setLooping(true);
-        mediaPlayer.start();
-
+        appname.animate().translationY(-2000).setDuration(3000).setStartDelay(3);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(Splash.this, Login.class);
-                i.putExtra("mediaPlayer", true);
+                Intent i = new Intent(Splash.this, About_game1.class);
                 startActivity(i);
                 finish();
             }
@@ -37,10 +33,5 @@ public class Splash extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (mediaPlayer != null) {
-            mediaPlayer.stop();
-            mediaPlayer.release();
-            mediaPlayer = null;
-        }
     }
 }

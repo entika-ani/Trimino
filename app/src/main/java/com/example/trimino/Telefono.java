@@ -2,20 +2,23 @@ package com.example.trimino;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.gridlayout.widget.GridLayout;
 
 public class Telefono extends AppCompatActivity {
-
+    static boolean Yes = false;
     private EditText passwordField;
     private StringBuilder password = new StringBuilder();
     private static final String CORRECT_PASSWORD = "17250322";
+    private ImageView gaxtnabar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,10 @@ public class Telefono extends AppCompatActivity {
         setContentView(R.layout.activity_telefono);
 
         passwordField = findViewById(R.id.password_field);
+        gaxtnabar = findViewById(R.id.gaxtnabar); // Получаем ссылку на изображение
+
+        // Устанавливаем изначально видимость невидимым
+        gaxtnabar.setVisibility(View.INVISIBLE);
 
         for (int i = 0; i <= 9; i++) {
             String buttonTag = String.valueOf(i);
@@ -50,6 +57,13 @@ public class Telefono extends AppCompatActivity {
             });
         } else {
             Log.e("ButtonSetup", "Clear button not found.");
+        }
+
+        // Проверяем, был ли пароль ранее верно введен
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        boolean isPasswordVerified = sharedPreferences.getBoolean("PasswordVerified", false);
+        if (isPasswordVerified) {
+            gaxtnabar.setVisibility(View.VISIBLE);
         }
     }
 
@@ -84,10 +98,20 @@ public class Telefono extends AppCompatActivity {
         String enteredPassword = password.toString();
         if (enteredPassword.equals(CORRECT_PASSWORD)) {
             showMessage("Password is correct!");
+            Yes = true;
+
+            // Сохраняем состояние проверки пароля
+            SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putBoolean("PasswordVerified", true);
+            editor.apply();
+
+            // Показываем изображение, когда пароль введен правильно
+            gaxtnabar.setVisibility(View.VISIBLE);
+
             Intent intent = new Intent(Telefono.this, Tellephone.class);
-            intent.putExtra("proceedToTellephone", 1); // Передаем значение 1, чтобы открыть Tellephone
             startActivity(intent);
-            finish(); // Закрываем Telefono
+            finish();
         } else {
             showMessage("Password is incorrect!");
         }

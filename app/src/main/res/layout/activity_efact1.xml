@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/facts"
+    android:id="@+id/darkGreenLayout"
+    tools:context=".random_facts.elion.E_fact1">
+
+    <ImageView
+        android:id="@+id/elion"
+        android:layout_width="918dp"
+        android:layout_height="1421dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-136dp"
+        android:layout_marginBottom="-279dp"
+        app:srcCompat="@drawable/e_fact1" />
+
+    <TextView
+        android:layout_width="751dp"
+        android:layout_height="273dp"
+        android:layout_above="@+id/elion"
+        android:layout_marginBottom="30dp"
+        android:text="I didn't speak until I was five, although I could."
+        android:textColor="@color/black"
+        android:textSize="70dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

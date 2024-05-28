@@ -11,37 +11,53 @@
     <RelativeLayout
 
         android:layout_width="match_parent"
-        android:layout_height="129dp">
+        android:layout_height="350dp">
 
         <TextView
             android:id="@+id/text_view_p1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="450dp"
+            android:layout_height="150dp"
             android:text="Player 1: 0"
-            android:textStyle="bold"
+            android:layout_margin="10dp"
             android:textColor="@color/black"
-            android:textSize="30sp" />
+            android:textSize="60sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/text_view_p2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="450dp"
+            android:layout_height="150dp"
             android:layout_below="@+id/text_view_p1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:text="Player 2: 0"
-            android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="30sp" />
+            android:textSize="60sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button_reset"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="273dp"
+            android:layout_height="133dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="33dp"
             android:backgroundTint="#A8FFFFFF"
             android:text="Reset"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="60dp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/white"
+            android:onClick="toggleMusic"
+            android:text="🔊"
+            android:textSize="30dp" />
     </RelativeLayout>
 
     <androidx.gridlayout.widget.GridLayout
@@ -77,7 +93,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6A257028"/>
+            android:backgroundTint="#54FFFFFF"/>
 
         <Button
             android:id="@+id/button_02"
@@ -103,7 +119,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6A257028"/>
+            android:backgroundTint="#54FFFFFF"/>
 
         <Button
             android:id="@+id/button_11"
@@ -129,7 +145,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6A257028"/>
+            android:backgroundTint="#54FFFFFF"/>
 
         <Button
             android:id="@+id/button_20"
@@ -155,7 +171,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6A257028" />
+            android:backgroundTint="#54FFFFFF" />
 
 
         <Button

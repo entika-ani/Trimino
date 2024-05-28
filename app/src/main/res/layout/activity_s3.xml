@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/darkGreenLayout"
+    android:background="@drawable/zal"
+    tools:context=".glux10.S3">
+
+    <Button
+        android:id="@+id/n_ej"
+        android:layout_width="245dp"
+        android:layout_height="143dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="#4BB5B3B3"
+        android:onClick="back"
+        android:text="BACK"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/lunaf"
+        android:layout_width="1067dp"
+        android:layout_height="1666dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-230dp"
+        android:layout_marginBottom="-339dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sayven" />
+
+    <ImageView
+
+        android:id="@+id/magaxat"
+        android:layout_width="565dp"
+        android:layout_height="374dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-70dp"
+        android:layout_marginBottom="841dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/block" />
+
+    <TextView
+        android:layout_width="393dp"
+        android:layout_height="264dp"
+        android:layout_alignEnd="@+id/magaxat"
+        android:layout_alignBottom="@+id/magaxat"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="57dp"
+        android:text="I'll be there soon."
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <ImageView
+
+        android:id="@+id/magaxat1"
+        android:layout_width="565dp"
+        android:layout_height="374dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-70dp"
+        android:layout_marginBottom="148dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/block" />
+
+    <TextView
+        android:layout_width="497dp"
+        android:layout_height="285dp"
+        android:layout_alignEnd="@+id/magaxat1"
+        android:layout_alignBottom="@+id/magaxat1"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="50dp"
+        android:text="The girls have made peace, and everything is back to normal."
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+
+</RelativeLayout>

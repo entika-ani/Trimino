@@ -6,9 +6,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.trimino.heraxos.DarkGreen3;
 import com.example.trimino.heraxos.Dark_green;
+import com.example.trimino.heraxos.ej2.Red_sqreen;
+import com.example.trimino.heraxos.ej3.BlueSqreen1;
+import com.example.trimino.heraxos.ej4.WhiteSqreen1;
 
 public class Tellephone extends AppCompatActivity {
 
@@ -18,10 +20,6 @@ public class Tellephone extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tellephone);
-
-        Intent intent = getIntent();
-        int proceedToTellephone = intent.getIntExtra("proceedToTellephone", 0);
-        Log.d("ProceedToTellephone", "Value: " + proceedToTellephone);
 
         LinearLayout h11 = findViewById(R.id.row1);
         LinearLayout h22 = findViewById(R.id.row2);
@@ -75,16 +73,16 @@ public class Tellephone extends AppCompatActivity {
 
     public void select(View v) {
         if (selectedButtonId == 1) {
-            Intent intent = new Intent(this, Dark_green.class);
+            Intent intent = new Intent(this, WhiteSqreen1.class);
             startActivity(intent);
         } else if (selectedButtonId == 2) {
             Intent intent = new Intent(this, Dark_green.class);
             startActivity(intent);
         } else if (selectedButtonId == 3) {
-            Intent intent = new Intent(this, ActivityH3.class);
+            Intent intent = new Intent(this, Red_sqreen.class);
             startActivity(intent);
         } else if (selectedButtonId == 4) {
-            Intent intent = new Intent(this, ActivityH4.class);
+            Intent intent = new Intent(this, BlueSqreen1.class);
             startActivity(intent);
         }
     }

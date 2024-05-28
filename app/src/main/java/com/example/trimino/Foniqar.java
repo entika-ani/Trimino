@@ -125,20 +125,20 @@ public class Foniqar extends AppCompatActivity {
 
     public void Help_us(View v){
         if (selectedButtonId == 1){
-            Intent intent = new Intent(this, Place3x3.class);
+            Intent intent = new Intent(this, Splash_fast.class);
             startActivity(intent);
             onPause();
         } else if (selectedButtonId == 2) {
-            Intent intent = new Intent(this, Place4x4.class);
+            Intent intent = new Intent(this, Splash_butterfly.class);
             startActivity(intent);
             onPause();
         }else if (selectedButtonId == 3) {
-            Intent intent = new Intent(this, Place5x5.class);
+            Intent intent = new Intent(this, Splash_sea.class);
             startActivity(intent);
             onPause();
         }
         else{
-            Intent intent = new Intent(this, Place6x6.class);
+            Intent intent = new Intent(this,Splash_slow.class);
             startActivity(intent);
             onPause();
         }

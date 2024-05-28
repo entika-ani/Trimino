@@ -17,14 +17,13 @@ public class SplashActivity2 extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-
-                int proceedToTellephone = getIntent().getIntExtra("proceedToTellephone", 0);
                 Intent mainIntent;
-                if (proceedToTellephone == 1) {
+                if (Telefono.Yes) {
                     mainIntent = new Intent(SplashActivity2.this, Tellephone.class);
                 } else {
                     mainIntent = new Intent(SplashActivity2.this, Telefono.class);
                 }
+
                 startActivity(mainIntent);
                 finish();
             }

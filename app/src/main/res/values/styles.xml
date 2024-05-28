@@ -31,11 +31,11 @@
     </style>
 
     <style name="KeypadButton">
-        <item name="android:layout_width">90sp</item>
-        <item name="android:layout_height">90sp</item>
+        <item name="android:layout_width">200sp</item>
+        <item name="android:layout_height">200sp</item>
         <item name="android:layout_margin">5sp</item>
-        <item name="android:backgroundTint">#6AFFFF99</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:backgroundTint">#EEFFFFFF</item>
+        <item name="android:textSize">250sp</item>
         <item name="android:textColor">@android:color/black</item>
     </style>
 

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.trimino.MainActivity;
 import com.example.trimino.R;
+import com.example.trimino.Splash2;
 
 public class Place4x4 extends AppCompatActivity implements View.OnClickListener {
     private final Button[][] buttons = new Button[4][4];
@@ -23,6 +25,10 @@ public class Place4x4 extends AppCompatActivity implements View.OnClickListener 
     private TextView textViewPlayer1;
     private TextView textViewPlayer2;
 
+    private MediaPlayer mediaPlayer;
+    private boolean isMediaPlayerRunning = false;
+    private boolean isMusicPaused = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +36,14 @@ public class Place4x4 extends AppCompatActivity implements View.OnClickListener 
 
         textViewPlayer1 = findViewById(R.id.text_view_p1);
         textViewPlayer2 = findViewById(R.id.text_view_p2);
+
+        Button musicButton = findViewById(R.id.button8); // Assuming this is the button for music control
+        musicButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toggleMusic(v);
+            }
+        });
 
         Button buttonReset = findViewById(R.id.button_reset);
         buttonReset.setOnClickListener(v -> resetGame());
@@ -48,7 +62,56 @@ public class Place4x4 extends AppCompatActivity implements View.OnClickListener 
                 buttons[i][j].setOnClickListener(this);
             }
         }
+
+        Intent intent = getIntent();
+        isMediaPlayerRunning = intent.getBooleanExtra("mediaPlayer", false);
+        if (isMediaPlayerRunning) {
+            mediaPlayer = MediaPlayer.create(this, R.raw.titer);
+            mediaPlayer.setLooping(true);
+            mediaPlayer.start();
+        }
     }
+
+
+    public void toggleMusic(View view) {
+        if (mediaPlayer != null) {
+            if (mediaPlayer.isPlaying()) {
+                mediaPlayer.pause();
+                isMusicPaused = true;
+            } else {
+                mediaPlayer.start();
+                isMusicPaused = false;
+            }
+        }
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (isMediaPlayerRunning && isMusicPaused) {
+            mediaPlayer.start();
+            isMusicPaused = false;
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (mediaPlayer != null && mediaPlayer.isPlaying()) {
+            mediaPlayer.pause();
+            isMusicPaused = true;
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if (mediaPlayer != null) {
+            mediaPlayer.stop();
+            mediaPlayer.release();
+            mediaPlayer = null;
+        }
+    }
+
 
 
     @Override
@@ -61,10 +124,12 @@ public class Place4x4 extends AppCompatActivity implements View.OnClickListener 
 
         if (player1Turn) {
             clickedButton.setText("X");
-            clickedButton.setTextColor(Color.BLACK);
+            clickedButton.setTextSize(50);
+            clickedButton.setTextColor(getResources().getColor(android.R.color.holo_purple));
         } else {
             clickedButton.setText("O");
-            clickedButton.setTextColor(Color.BLACK);
+            clickedButton.setTextSize(50);
+            clickedButton.setTextColor(getResources().getColor(android.R.color.holo_blue_bright));
         }
 
         roundCount++;
@@ -173,8 +238,8 @@ public class Place4x4 extends AppCompatActivity implements View.OnClickListener 
 
     private void checkGameEnd1() {
         if (player1Points == 4 || player2Points == 4) {
-            Intent intent = new Intent(this, MainActivity.class);
-            intent.putExtra("coins", 50);
+            Intent intent = new Intent(this, Splash2.class);
+            intent.putExtra("gridSize", 4);
             startActivity(intent);
             finish();
         }

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Syu2_2"
+    android:background="@drawable/sad"
+    android:id="@+id/darkGreenLayout">
+
+
+    <ImageView
+        android:id="@+id/lunaf"
+        android:layout_width="418dp"
+        android:layout_height="579dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-65dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/l2" />
+
+    <ImageView
+
+        android:id="@+id/magaxat"
+        android:layout_width="match_parent"
+        android:layout_height="237dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-60dp"
+        android:layout_marginBottom="0dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/magaxat" />
+
+    <TextView
+        android:id="@+id/luna_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="102dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginBottom="66dp"
+        android:text="@string/luna"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/n_ej"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="#B5B3B3"
+        android:onClick="back"
+        android:text="BACK"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

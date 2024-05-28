@@ -19,16 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/fon" />
 
-    <TextView
-        android:id="@+id/sumTextView"
-        android:layout_width="188sp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/WAR_PRINCEESS"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:text="Coins"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/WAR_PRINCEESS"
         android:layout_width="wrap_content"
@@ -47,7 +38,7 @@
         android:layout_width="337sp"
         android:layout_height="280sp"
         android:layout_marginStart="30sp"
-        android:layout_below="@+id/sumTextView"
+        android:layout_below="@+id/WAR_PRINCEESS"
         android:layout_marginTop="5sp"
         android:layout_marginEnd="20sp"
         app:srcCompat="@drawable/bam" />
@@ -88,6 +79,23 @@
         android:textSize="35sp"
         android:textStyle="bold" />
 
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="65sp"
+        android:layout_marginEnd="65sp"
+        android:layout_marginBottom="-85sp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/protest"
+        android:onClick="startStories"
+        android:text="Stories"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -124,33 +132,13 @@
         android:id="@+id/button8"
         android:layout_width="60sp"
         android:layout_height="50sp"
-        android:layout_below="@+id/sumTextView"
+        android:layout_below="@+id/WAR_PRINCEESS"
         android:layout_marginTop="0sp"
         android:backgroundTint="@color/white"
         android:text="🔊"
         android:onClick="toggleMusic"/>
 
 
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="60sp"
-        android:layout_height="50sp"
-        android:layout_below="@+id/button8"
-        android:layout_marginTop="6sp"
-        android:backgroundTint="@color/white"
-        android:onClick="startStories"
-        android:text="✒️" />
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="61sp"
-        android:layout_height="50sp"
-        android:layout_below="@+id/button9"
-        android:layout_marginTop="6sp"
-        android:backgroundTint="@color/white"
-        android:onClick="logout"
-        android:text="log"
-        android:textColor="#37058F"
-        android:textSize="8.9sp"/>
 
 
 </RelativeLayout>

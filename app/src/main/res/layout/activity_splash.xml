@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="140sp"
         app:srcCompat="@drawable/b"
+        android:layout_centerInParent="true"
         tools:ignore="InvalidId" />
 
     <TextView
@@ -29,7 +30,7 @@
         android:fontFamily="@font/protest"
         android:text="WAR PRINCEESS"
         android:textColor="@color/white"
-        android:textSize="45sp" />
+        android:textSize="100sp" />
 
 
 

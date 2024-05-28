@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/facts"
+    android:id="@+id/darkGreenLayout"
+    tools:context=".random_facts.elion.E_fact3">
+
+    <ImageView
+        android:id="@+id/elion"
+        android:layout_width="904dp"
+        android:layout_height="1339dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="-249dp"
+        app:srcCompat="@drawable/f_fact1" />
+
+    <TextView
+        android:layout_width="742dp"
+        android:layout_height="314dp"
+        android:layout_above="@+id/elion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-10dp"
+        android:text="I wanted to exchange my element with Sylphia. She would have stopped asking me to call butterflies."
+        android:textColor="@color/black"
+        android:textSize="60dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

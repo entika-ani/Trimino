@@ -4,28 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Syu2_2">
-
-    <ImageView
-
-        android:id="@+id/imageView_sad"
-        android:layout_width="match_parent"
-        android:layout_height="647dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/sad" />
+    tools:context=".Syu2_2"
+    android:background="@drawable/sad"
+    android:id="@+id/darkGreenLayout">
 
     <ImageView
         android:id="@+id/lunaf"
-        android:layout_width="250dp"
-        android:layout_height="560dp"
-        android:layout_above="@+id/magaxat"
+        android:layout_width="800dp"
+        android:layout_height="1300dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-112dp"
+        android:layout_marginBottom="170dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,87 +23,39 @@
         app:srcCompat="@drawable/l2" />
 
     <ImageView
-
         android:id="@+id/magaxat"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@+id/imageView_sad"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="-60dp"
-        android:layout_marginBottom="-15dp"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/magaxat" />
 
 
     <TextView
         android:id="@+id/luna_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="81dp"
-        android:layout_below="@+id/imageView_sad"
-        android:layout_alignBottom="@+id/imageView_sad"
+        android:layout_width="999dp"
+        android:layout_height="234dp"
+        android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="-33dp"
-        android:layout_marginBottom="-47dp"
+        android:layout_marginBottom="29dp"
         android:text="@string/lunas"
         android:textColor="@color/black"
-        android:textSize="20dp" />
-
-    <Button
-        android:id="@+id/nastroy"
-        android:layout_width="55dp"
-        android:layout_height="45dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="17dp"
-        android:backgroundTint="#B5B3B3"
-        />
-
-    <TextView
-        android:layout_width="45dp"
-        android:layout_height="25dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="12dp"
-        android:text="⚙️"
-        android:textSize="20dp" />
+        android:textSize="55dp"
+        android:layout_centerHorizontal="true"/>
 
     <Button
         android:id="@+id/n_ej"
-        android:layout_width="75dp"
-        android:layout_height="wrap_content"
+        android:layout_width="245dp"
+        android:layout_height="143dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="17dp"
         android:backgroundTint="#B5B3B3"
-        android:text="BACK"
         android:onClick="back"
+        android:text="BACK"
         android:textColor="@color/black"
-        android:textSize="10dp"
+        android:textSize="40dp"
         android:textStyle="bold|italic" />
-
-    <Button
-        android:id="@+id/araj"
-        android:layout_width="75dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView_sad"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="11dp"
-        android:layout_marginBottom="-81dp"
-        android:backgroundTint="#B5B3B3"
-        android:onClick="araj"
-        />
-
-    <Button
-        android:id="@+id/mi_hat_het"
-        android:layout_width="75dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView_sad"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="323dp"
-        android:layout_marginBottom="-84dp"
-        android:backgroundTint="#B5B3B3"
-        android:onClick="mi_hatHet"
-         />
 
 </RelativeLayout>

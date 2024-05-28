@@ -11,37 +11,59 @@
     <RelativeLayout
 
         android:layout_width="match_parent"
-        android:layout_height="129dp">
+        android:layout_height="300dp">
 
         <TextView
             android:id="@+id/text_view_p1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="450dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:text="Player 1: 0"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="30sp" />
+            android:textColor="#03213C"
+            android:textSize="80dp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/text_view_p2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="450dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_below="@+id/text_view_p1"
             android:text="Player 2: 0"
             android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="30sp" />
+            android:textColor="#03213C"
+            android:textSize="80sp" />
 
         <Button
             android:id="@+id/button_reset"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="273dp"
+            android:layout_height="133dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginEnd="33dp"
-            android:backgroundTint="#75FFFFFF"
-            android:text="reset"
-            android:textColor="@color/black"/>
+            android:backgroundTint="#A8FFFFFF"
+            android:text="Reset"
+            android:textColor="@color/black"
+            android:textSize="60dp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/white"
+            android:onClick="toggleMusic"
+            android:text="🔊"
+            android:textSize="30dp" />
     </RelativeLayout>
 
     <androidx.gridlayout.widget.GridLayout
@@ -64,7 +86,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6103A9F4"/>
+            android:backgroundTint="#61EEF1F3"/>
 
         <Button
             android:id="@+id/button_02"
@@ -90,7 +112,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6103A9F4"/>
+            android:backgroundTint="#61EEF1F3"/>
 
         <Button
             android:id="@+id/button_04"
@@ -116,7 +138,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6103A9F4"/>
+            android:backgroundTint="#61EEF1F3"/>
 
         <Button
             android:id="@+id/button_11"
@@ -129,7 +151,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6133F3B6"/>
+            android:backgroundTint="#61EEF1F3"/>
 
         <Button
             android:id="@+id/button_12"
@@ -142,7 +164,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6103A9F4"/>
+            android:backgroundTint="#61EEF1F3"/>
 
         <Button
             android:id="@+id/button_13"
@@ -155,7 +177,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6133F3B6" />
+            android:backgroundTint="#61EEF1F3" />
 
 
         <Button
@@ -169,7 +191,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6103A9F4"/>
+            android:backgroundTint="#61EEF1F3"/>
 
         <Button
             android:id="@+id/button_15"
@@ -195,7 +217,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6103A9F4" />
+            android:backgroundTint="#61EEF1F3" />
 
 
         <Button
@@ -209,7 +231,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6133F3B6"/>
+            android:backgroundTint="#61EEF1F3"/>
         <Button
             android:id="@+id/button_23"
             android:layout_width="23sp"
@@ -221,7 +243,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6103A9F4"/>
+            android:backgroundTint="#61EEF1F3"/>
 
         <Button
             android:id="@+id/button_24"
@@ -234,7 +256,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6133F3B6" />
+            android:backgroundTint="#61EEF1F3" />
 
 
         <Button
@@ -248,7 +270,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6103A9F4"/>
+            android:backgroundTint="#61EEF1F3"/>
         <Button
             android:id="@+id/button_31"
             android:layout_width="23sp"
@@ -260,7 +282,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6133F3B6" />
+            android:backgroundTint="#61EEF1F3" />
 
         <Button
             android:id="@+id/button_32"
@@ -273,7 +295,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6103A9F4" />
+            android:backgroundTint="#61EEF1F3" />
 
 
         <Button
@@ -287,7 +309,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6133F3B6"/>
+            android:backgroundTint="#61EEF1F3"/>
         <Button
             android:id="@+id/button_34"
             android:layout_width="23sp"
@@ -299,7 +321,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6103A9F4" />
+            android:backgroundTint="#61EEF1F3" />
         <Button
             android:id="@+id/button_35"
             android:layout_width="23sp"
@@ -323,7 +345,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6103A9F4" />
+            android:backgroundTint="#61EEF1F3" />
 
         <Button
             android:id="@+id/button_42"
@@ -336,7 +358,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6133F3B6" />
+            android:backgroundTint="#61EEF1F3" />
 
 
         <Button
@@ -350,7 +372,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6103A9F4"/>
+            android:backgroundTint="#61EEF1F3"/>
         <Button
             android:id="@+id/button_44"
             android:layout_width="23sp"
@@ -362,7 +384,7 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6133F3B6" />
+            android:backgroundTint="#61EEF1F3" />
         <Button
             android:id="@+id/button_45"
             android:layout_width="23sp"
@@ -374,6 +396,6 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1"
-            android:backgroundTint="#6103A9F4" />
+            android:backgroundTint="#61EEF1F3" />
     </androidx.gridlayout.widget.GridLayout>
 </LinearLayout>
