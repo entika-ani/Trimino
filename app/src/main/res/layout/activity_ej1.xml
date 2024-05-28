@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/darkGreenLayout"
+    android:background="@drawable/kingdom"
+    tools:context=".about.Ej1">
+
+    <TextView
+        android:id="@+id/nkar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="In the distant kingdom of Elementaria, every person possessed an extraordinary power — the elements of water, fire, air, and earth. This kingdom was known for its harmony and balance, as each inhabitant contributed to maintaining the equilibrium of these powerful forces."
+        android:textColor="@color/black"
+        android:textSize="60dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nkar"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/cnox"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fon" />
+
+
+    <TextView
+        android:id="@+id/WAR_PRINCEESS"
+        android:layout_width="wrap_content"
+        android:layout_height="193dp"
+        android:layout_marginTop="15sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/protest"
+        android:text="WAR PRINCEESS"
+        android:textColor="@color/black"
+        android:textSize="120dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="958dp"
+        android:layout_height="768dp"
+        android:layout_below="@+id/WAR_PRINCEESS"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginEnd="20sp"
+        app:srcCompat="@drawable/bam" />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="120sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView2"
+        android:layout_marginStart="65sp"
+        android:layout_marginEnd="65sp"
+        android:layout_marginBottom="10sp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/protest"
+        android:onClick="startNEWActivity"
+        android:text="Play!"
+        android:textColor="@color/black"
+        android:textSize="60dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="120sp"
+        android:layout_below="@id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="65sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginEnd="65sp"
+        android:layout_marginBottom="65sp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/protest"
+        android:onClick="startAbout"
+        android:text="About game"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="120sp"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70sp"
+        android:layout_marginEnd="65sp"
+        android:layout_marginBottom="-150sp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/protest"
+        android:onClick="startStories"
+        android:text="Stories"
+        android:textColor="@color/black"
+        android:textSize="60dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="50sp"
+            android:layout_height="120dp"
+            android:layout_margin="10sp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:onClick="startLetters"
+            android:text="💌"
+            android:textSize="60sp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="50sp"
+            android:layout_height="120sp"
+            android:layout_margin="10sp"
+            android:layout_weight="1"
+            android:onClick="openWheel"
+            android:backgroundTint="#FFFFFF"
+            android:text="🪙"
+            android:textSize="60sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_below="@+id/WAR_PRINCEESS"
+        android:layout_marginTop="0sp"
+        android:backgroundTint="@color/white"
+        android:text="🔊"
+        android:textSize="30dp"
+        android:onClick="toggleMusic"/>
+
+</RelativeLayout>

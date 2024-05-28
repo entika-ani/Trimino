@@ -24,41 +24,43 @@
         app:srcCompat="@drawable/spin_bg" />
 
     <ImageView
-            android:id="@+id/wheel"
-            android:layout_width="350dp"
-            android:layout_height="350dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/spin_wheel"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.508"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.498" />
+        android:id="@+id/wheel"
+        android:layout_width="1037dp"
+        android:layout_height="1072dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/spin_wheel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
 
-        <ImageView
-            android:id="@+id/arrow"
-            android:layout_width="320dp"
-            android:layout_height="320dp"
-            android:layout_marginEnd="11dp"
-            android:src="@drawable/spin_arrow"
-            app:layout_constraintBottom_toBottomOf="@+id/wheel"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/wheel" />
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="507dp"
+        android:layout_height="515dp"
+        android:layout_marginEnd="11dp"
+        android:src="@drawable/spin_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/wheel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/wheel"
+        app:layout_constraintVertical_bias="0.545" />
 
     <Button
         android:id="@+id/het"
-        android:layout_width="144dp"
-        android:layout_height="51dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginBottom="92dp"
+        android:layout_width="408dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="328dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#B3C9D9F0"
         android:fontFamily="@font/protest"
         android:onClick="back"
         android:text="BACK"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="60dp"
         app:layout_constraintBottom_toTopOf="@+id/wheel"
         app:layout_constraintEnd_toEndOf="parent" />
 

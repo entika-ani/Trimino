@@ -29,10 +29,6 @@ public class Syu1_1y extends AppCompatActivity {
             }
         });
 
-        SharedPreferences sharedPreferences = getSharedPreferences("coin_prefs", MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putInt("coins_sy1_1", 50); // Сохраняем 50 монет
-        editor.apply(); // Применяем изменения
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,15 +55,9 @@ public class Syu1_1y extends AppCompatActivity {
         finish();
     }
 
-    public void mi_hatHet(View v){
-        Intent intent = new Intent(this, Syu2_3.class);
-        startActivity(intent);
-        finish();
-    }
 
     public void ah(View v) {
         Intent intent = new Intent(this, Syu1_1_1.class);
-        intent.putExtra("coins", 50); // Передаем количество монет через Intent
         startActivity(intent);
         finish();
     }

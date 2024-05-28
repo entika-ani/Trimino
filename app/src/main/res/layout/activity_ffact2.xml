@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/facts"
+    android:id="@+id/darkGreenLayout"
+    tools:context=".random_facts.faira.F_fact2">
+
+    <ImageView
+        android:id="@+id/elion"
+        android:layout_width="918dp"
+        android:layout_height="1421dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="-249dp"
+        app:srcCompat="@drawable/f_fact3" />
+
+    <TextView
+        android:layout_width="815dp"
+        android:layout_height="204dp"
+        android:layout_above="@+id/elion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:text="During a sword dance, I cut off my sister's hair."
+        android:textColor="@color/black"
+        android:textSize="70dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

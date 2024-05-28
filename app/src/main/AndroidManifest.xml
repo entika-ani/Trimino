@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
@@ -23,7 +24,272 @@
         android:roundIcon="@drawable/b"
         android:supportsRtl="true"
         android:theme="@style/Theme.Trimino"
+        android:requestLegacyExternalStorage="true"
         tools:targetApi="31">
+        <activity
+            android:name=".glux10.S3"
+            android:exported="false" />
+        <activity
+            android:name=".glux10.S2"
+            android:exported="false" />
+        <activity
+            android:name=".glux9.J5"
+            android:exported="false" />
+        <activity
+            android:name=".glux9.J4"
+            android:exported="false" />
+        <activity
+            android:name=".glux9.J3"
+            android:exported="false" />
+        <activity
+            android:name=".glux9.J2"
+            android:exported="false" />
+        <activity
+            android:name=".glux8.I11"
+            android:exported="false" />
+        <activity
+            android:name=".glux8.I10"
+            android:exported="false" />
+        <activity
+            android:name=".glux8.I9"
+            android:exported="false" />
+        <activity
+            android:name=".glux8.I8"
+            android:exported="false" />
+        <activity
+            android:name=".glux8.I7"
+            android:exported="false" />
+        <activity
+            android:name=".glux8.I6"
+            android:exported="false" />
+        <activity
+            android:name=".glux8.I5"
+            android:exported="false" />
+        <activity
+            android:name=".glux8.I4"
+            android:exported="false" />
+        <activity
+            android:name=".glux8.I3"
+            android:exported="false" />
+        <activity
+            android:name=".glux8.I2"
+            android:exported="false" />
+        <activity
+            android:name=".glux7.D9"
+            android:exported="false" />
+        <activity
+            android:name=".glux7.D8"
+            android:exported="false" />
+        <activity
+            android:name=".glux7.D7"
+            android:exported="false" />
+        <activity
+            android:name=".glux7.D6"
+            android:exported="false" />
+        <activity
+            android:name=".glux7.D5"
+            android:exported="false" />
+        <activity
+            android:name=".glux7.D4"
+            android:exported="false" />
+        <activity
+            android:name=".glux7.D3"
+            android:exported="false" />
+        <activity
+            android:name=".glux7.D2"
+            android:exported="false" />
+        <activity
+            android:name=".glux6.C9"
+            android:exported="false" />
+        <activity
+            android:name=".glux6.C8"
+            android:exported="false" />
+        <activity
+            android:name=".glux6.C7"
+            android:exported="false" />
+        <activity
+            android:name=".glux6.C6"
+            android:exported="false" />
+        <activity
+            android:name=".glux6.C5"
+            android:exported="false" />
+        <activity
+            android:name=".glux6.C4"
+            android:exported="false" />
+        <activity
+            android:name=".glux6.C3"
+            android:exported="false" />
+        <activity
+            android:name=".glux6.C2"
+            android:exported="false" />
+        <activity
+            android:name=".glux5.A13"
+            android:exported="false" />
+        <activity
+            android:name=".glux5.A12"
+            android:exported="false" />
+        <activity
+            android:name=".glux5.A11"
+            android:exported="false" />
+        <activity
+            android:name=".glux5.A10"
+            android:exported="false" />
+        <activity
+            android:name=".glux5.A9"
+            android:exported="false" />
+        <activity
+            android:name=".glux5.A8"
+            android:exported="false" />
+        <activity
+            android:name=".glux5.A7"
+            android:exported="false" />
+        <activity
+            android:name=".glux5.A6"
+            android:exported="false" />
+        <activity
+            android:name=".glux5.A5"
+            android:exported="false" />
+        <activity
+            android:name=".glux5.A4"
+            android:exported="false" />
+        <activity
+            android:name=".glux5.A3"
+            android:exported="false" />
+        <activity
+            android:name=".glux5.A2"
+            android:exported="false" />
+        <activity
+            android:name=".random_facts.sylfa.S_fact3"
+            android:exported="false" />
+        <activity
+            android:name=".random_facts.sylfa.S_fact2"
+            android:exported="false" />
+        <activity
+            android:name=".random_facts.sylfa.S_fact1"
+            android:exported="false" />
+        <activity
+            android:name=".random_facts.luna.L_fact3"
+            android:exported="false" />
+        <activity
+            android:name=".random_facts.luna.L_fact2"
+            android:exported="false" />
+        <activity
+            android:name=".random_facts.luna.L_fact1"
+            android:exported="false" />
+        <activity
+            android:name=".random_facts.faira.F_fact3"
+            android:exported="false" />
+        <activity
+            android:name=".random_facts.faira.F_fact2"
+            android:exported="false" />
+        <activity
+            android:name=".random_facts.faira.F_fact1"
+            android:exported="false" />
+        <activity
+            android:name=".random_facts.elion.E_fact3"
+            android:exported="false" />
+        <activity
+            android:name=".random_facts.elion.E_fact2"
+            android:exported="false" />
+        <activity
+            android:name=".random_facts.elion.E_fact1"
+            android:exported="false" />
+        <activity
+            android:name=".about.About_game1"
+            android:exported="false" />
+        <activity
+            android:name=".glux4.B9"
+            android:exported="false" />
+        <activity
+            android:name=".glux4.B8"
+            android:exported="false" />
+        <activity
+            android:name=".glux4.B7"
+            android:exported="false" />
+        <activity
+            android:name=".glux4.B5"
+            android:exported="false" />
+        <activity
+            android:name=".glux4.B4"
+            android:exported="false" />
+        <activity
+            android:name=".glux4.B3"
+            android:exported="false" />
+        <activity
+            android:name=".glux4.B2"
+            android:exported="false" />
+        <activity
+            android:name=".glux3.E4"
+            android:exported="false" />
+        <activity
+            android:name=".glux3.E3"
+            android:exported="false" />
+        <activity
+            android:name=".glux3.E2"
+            android:exported="false" />
+        <activity
+            android:name=".about.Ej3"
+            android:exported="false" />
+        <activity
+            android:name=".about.Ej2"
+            android:exported="false" />
+        <activity
+            android:name=".about.Ej1"
+            android:exported="false" />
+        <activity
+            android:name=".Splash_wheel"
+            android:exported="false" />
+        <activity
+            android:name=".Splash_sea"
+            android:exported="false" />
+        <activity
+            android:name=".Splash_butterfly"
+            android:exported="false" />
+        <activity
+            android:name=".Splash_slow"
+            android:exported="false" />
+        <activity
+            android:name=".Splash_fast"
+            android:exported="false" />
+        <activity
+            android:name=".Splash2"
+            android:exported="false" />
+        <activity
+            android:name=".heraxos.ej4.WhiteSqreen5"
+            android:exported="false" />
+        <activity
+            android:name=".heraxos.ej4.WhiteSqreen4"
+            android:exported="false" />
+        <activity
+            android:name=".heraxos.ej4.WhiteSqreen3"
+            android:exported="false" />
+        <activity
+            android:name=".heraxos.ej4.WhiteSqreen2"
+            android:exported="false" />
+        <activity
+            android:name=".heraxos.ej4.WhiteSqreen1"
+            android:exported="false" />
+        <activity
+            android:name=".heraxos.ej3.BlueSqreen4"
+            android:exported="false" />
+        <activity
+            android:name=".heraxos.ej3.BlueSqreen3"
+            android:exported="false" />
+        <activity
+            android:name=".heraxos.ej3.BlueSqreen2"
+            android:exported="false" />
+        <activity
+            android:name=".heraxos.ej3.BlueSqreen1"
+            android:exported="false" />
+        <activity
+            android:name=".heraxos.ej2.RedSqreen3"
+            android:exported="false" />
+        <activity
+            android:name=".heraxos.ej2.RedSqreen2"
+            android:exported="false" />
+        <activity
+            android:name=".heraxos.ej2.Red_sqreen"
+            android:exported="false" />
         <activity
             android:name=".heraxos.DarkGreen7"
             android:exported="false" />
@@ -44,15 +310,6 @@
             android:exported="false" />
         <activity
             android:name=".heraxos.Dark_green"
-            android:exported="false" />
-        <activity
-            android:name=".glux1.F4"
-            android:exported="false" />
-        <activity
-            android:name=".glux1.F3"
-            android:exported="false" />
-        <activity
-            android:name=".glux1.F2"
             android:exported="false" />
         <activity
             android:name=".glux10.S1"
@@ -79,15 +336,6 @@
             android:name=".glux3.E1"
             android:exported="false" />
         <activity
-            android:name=".glux2.G1"
-            android:exported="false" />
-        <activity
-            android:name=".glux1.F1"
-            android:exported="false" />
-        <activity
-            android:name=".PaymentConfirmationActivity"
-            android:exported="false" />
-        <activity
             android:name=".SplashActivity2"
             android:exported="false" />
         <activity
@@ -106,37 +354,7 @@
             android:name=".place.Place3x3"
             android:exported="false" />
         <activity
-            android:name=".ForgetPass"
-            android:exported="false" />
-        <activity
-            android:name=".Login"
-            android:exported="false" />
-        <activity
-            android:name=".Register"
-            android:exported="false" />
-        <activity
-            android:name=".Wait"
-            android:exported="false" />
-        <activity
-            android:name=".Erku"
-            android:exported="false" />
-        <activity
             android:name=".Tellephone"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityH4"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityH3"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityH2"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityH1"
-            android:exported="false" />
-        <activity
-            android:name=".Arajin"
             android:exported="false" />
         <activity
             android:name=".Syu1_2_2"
@@ -155,9 +373,6 @@
             android:exported="false" />
         <activity
             android:name=".Syu1_1y"
-            android:exported="false" />
-        <activity
-            android:name=".GamePlay1"
             android:exported="false" />
         <activity
             android:name=".S2_15"
@@ -243,20 +458,9 @@
         <activity
             android:name=".Wheeel"
             android:exported="false" />
-        <activity
-            android:name=".MyViewPagerAdapter6"
-            android:exported="false" />
-        <activity
-            android:name=".About"
-            android:exported="false" />
-
         <meta-data
             android:name="android.support.v7.app.AppCompatView.fontFamily"
             android:resource="@font/protest" />
-
-        <activity
-            android:name=".games"
-            android:exported="false" />
 
         <meta-data
             android:name="android.support.v7.app.AppCompatView.fontFamily"
@@ -267,16 +471,8 @@
             android:exported="false"
             android:label="@string/title_activity_syu1" />
         <activity
-            android:name=".First"
-            android:exported="false" />
-        <activity
             android:name=".Stories"
             android:exported="false" />
-        <activity
-            android:name=".Letters"
-            android:exported="false"
-            android:label="@string/title_activity_letters"
-            android:theme="@style/Theme.Trimino" />
         <activity
             android:name=".Splash"
             android:exported="true">

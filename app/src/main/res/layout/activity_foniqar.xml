@@ -6,18 +6,19 @@
     android:layout_height="match_parent"
     android:background="@drawable/fonfon"
     tools:context=".Foniqar">
+
     <TextView
 
         android:id="@+id/text_dab"
-        android:layout_width="206dp"
-        android:layout_height="wrap_content"
+        android:layout_width="548dp"
+        android:layout_height="251dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/protest"
         android:gravity="center"
         android:text="Duoline"
         android:textColor="@color/black"
-        android:textSize="55dp"
+        android:textSize="150dp"
         android:textStyle="bold" />
     <LinearLayout
         android:layout_width="wrap_content"
@@ -27,34 +28,34 @@
 
         <LinearLayout
             android:id="@+id/h11"
-            android:layout_width="105dp"
-            android:layout_height="105dp"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
             android:layout_margin="15dp"
             android:background="@drawable/button_background">
+
             <Button
                 android:id="@+id/h1"
+                android:layout_width="235dp"
+                android:layout_height="235dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="2dp"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:onClick="H1"
                 android:backgroundTint="#0085FBE0"
                 android:foreground="@drawable/zemlyaska"
-                />
+                android:onClick="H1" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/h22"
-            android:layout_width="105dp"
-            android:layout_height="105dp"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
             android:layout_margin="15dp"
             android:background="@drawable/button_background">
             <Button
                 android:id="@+id/h2"
                 android:layout_gravity="center"
                 android:layout_marginLeft="2dp"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="235dp"
+                android:layout_height="235dp"
                 android:onClick="H1"
                 android:backgroundTint="#0085FBE0"
                 android:foreground="@drawable/vozdushok"
@@ -62,16 +63,16 @@
         </LinearLayout>
         <LinearLayout
             android:id="@+id/h33"
-            android:layout_width="105dp"
-            android:layout_height="105dp"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
             android:layout_margin="15dp"
             android:background="@drawable/button_background">
             <Button
                 android:id="@+id/h3"
                 android:layout_gravity="center"
                 android:layout_marginLeft="2dp"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="235dp"
+                android:layout_height="235dp"
                 android:onClick="H1"
                 android:backgroundTint="#0085FBE0"
                 android:foreground="@drawable/jurik"
@@ -79,16 +80,16 @@
         </LinearLayout>
         <LinearLayout
             android:id="@+id/h44"
-            android:layout_width="105dp"
-            android:layout_height="105dp"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
             android:layout_margin="15dp"
             android:background="@drawable/button_background">
             <Button
                 android:id="@+id/h4"
                 android:layout_gravity="center"
                 android:layout_marginLeft="2dp"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
                 android:onClick="H1"
                 android:backgroundTint="#0085FBE0"
                 android:foreground="@drawable/krakikochka"
@@ -100,23 +101,23 @@
 
     <LinearLayout
         android:id="@+id/bomj1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="719dp"
+        android:layout_height="1088dp"
         android:layout_below="@+id/text_dab"
-        android:orientation="vertical"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="20dp">
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/xosq1"
-            android:layout_width="249dp"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:fontFamily="@font/protest"
+
             android:text="A 3x3 field for two players, where the winner is the one who first scores 2 points"
             android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:textSize="55dp" />
 
 
         <TextView
@@ -126,10 +127,10 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
-            android:fontFamily="@font/protest"
+
             android:text="A 4x4 field for two players, where the winner is the one who first scores 4 points"
             android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:textSize="55dp" />
 
         <TextView
             android:id="@+id/xosq3"
@@ -137,11 +138,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="55dp"
-            android:fontFamily="@font/protest"
+            android:layout_marginTop="65dp"
             android:text="A 5x5 field for two players, where the winner is the one who first scores 5 points"
             android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:textSize="55dp" />
 
         <TextView
             android:id="@+id/xosq4"
@@ -149,33 +149,30 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="55dp"
-            android:fontFamily="@font/protest"
+            android:layout_marginTop="65dp"
             android:text="A 6x6 field for two players, where the winner is the one who first scores 6 points"
             android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:textSize="55dp" />
 
 
     </LinearLayout>
 
     <Button
         android:id="@+id/selectWindPage"
-        android:layout_width="350dp"
-        android:layout_height="65dp"
+        android:layout_width="584dp"
+        android:layout_height="141dp"
         android:layout_alignBottom="@+id/bomj1"
+        android:layout_centerHorizontal="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
         android:layout_marginEnd="0dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-111dp"
+        android:layout_marginBottom="-205dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/protest"
         android:onClick="Help_us"
         android:text="𓆩SELECT𓆪"
         android:textColor="#3E3C3C"
-        android:textSize="25dp" />
-
-
+        android:textSize="60dp" />
 
 
 </RelativeLayout>

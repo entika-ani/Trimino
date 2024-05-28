@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/darkGreenLayout"
+    android:background="@drawable/kingdom"
+    tools:context=".about.Ej3">
+
+    <TextView
+        android:id="@+id/nkar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One day, tragedy struck the kingdom — King Arion and Queen Lisia perished in a terrible shipwreck. After this calamity, a crisis began in Elementaria. Without the wise rule of the king and queen, the kingdom plunged into chaos."
+        android:textSize="60dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nkar"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/cnox"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

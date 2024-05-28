@@ -63,8 +63,8 @@
     <string name="luna">-Ok, I will try... When did my sister Elion visit us?</string>
     <string name="answer">-Last Saturday. Did something happen Miss Luna?</string>
     <string name="lunas_ans">-Arrange a meeting for us!</string>
-    <string name="amen1">-No, I just thought that it would be nice to meet her.(+100 coins) </string>
-    <string name="amen2">-If yes, it\'s not your deal. Don\'t stick your nose where they don\'t ask! (0 coins)</string>
+    <string name="amen1">-No, I just thought that it would be nice to meet her. </string>
+    <string name="amen2">-If yes, it\'s not your deal. Don\'t stick your nose where they don\'t ask!</string>
     <string name="gion_ans">-I will immediately do that, Miss.</string>
     <string name="amens1">-No, I just thought that it would be nice to meet her.</string>
     <string name="amens2">-If yes, it\'s not your deal. Don\'t stick your nose where they don\'t ask!</string>
@@ -81,8 +81,8 @@
     <string name="a9">-Unfortunately, I don\'t know, there is a password with eight symbols. </string>
     <string name="a10">-How can I help you, sister? </string>
     <string name="a11">-I am not sure but on the lock screen there is one very interesting picture. </string>
-    <string name="vibor2">-Keep silent. ( Nothing happened with coins) </string>
-    <string name="vibor1">-Miss, I think that you were not guilty of your brother\'s death. (+50 coins)</string>
+    <string name="vibor2">-Keep silent. </string>
+    <string name="vibor1">-Miss, I think that you were not guilty of your brother\'s death.</string>
     <string name="a14">-I will send people to check that is the phone on its place. </string>
     <string name="a15">-No, Luna, I will check it by myself. If you will sent people it will be suspicious for Sylphia and Faera. Let me do that by myself.</string>
     <string name="a16">-Ok, I trust you.</string>

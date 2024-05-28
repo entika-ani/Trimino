@@ -5,10 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
-import com.example.trimino.glux1.F1;
 import com.example.trimino.glux10.S1;
-import com.example.trimino.glux2.G1;
 import com.example.trimino.glux3.E1;
 import com.example.trimino.glux4.B1;
 import com.example.trimino.glux5.A1;
@@ -31,12 +28,12 @@ public class Stories extends AppCompatActivity {
         onPause();
     }
     public void g1(View v){
-        Intent intent = new Intent(this, F1.class);
+        Intent intent = new Intent(this, Syu1.class);
         startActivity(intent);
         onPause();
     }
     public void g2(View v){
-        Intent intent = new Intent(this, G1.class);
+        Intent intent = new Intent(this, Syu2.class);
         startActivity(intent);
         onPause();
     }

@@ -6,54 +6,6 @@
     android:layout_height="match_parent"
     android:id="@+id/darkGreenLayout"
     tools:context=".heraxos.Dark_green"
-    android:background="@drawable/darkgreen">
-
-    <ImageView
-        android:id="@+id/Elion"
-        android:layout_width="279dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="132dp"
-        android:layout_marginBottom="301dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/elion" />
-
-    <ImageView
-        android:id="@+id/nav"
-        android:layout_width="450dp"
-        android:layout_height="412dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="365dp"
-        android:layout_marginEnd="-42dp"
-        android:layout_marginBottom="-31dp"
-        android:src="@drawable/nav" />
-
-    <ImageView
-        android:id="@+id/xosq1"
-        android:layout_width="339dp"
-        android:layout_height="512dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="167dp"
-        android:layout_marginBottom="135dp"
-        android:src="@drawable/block" />
-
-    <TextView
-        android:layout_width="252dp"
-        android:layout_height="144dp"
-        android:layout_alignBottom="@+id/xosq1"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="31dp"
-        android:layout_marginBottom="144dp"
-        android:text="After  parents died, a demon possessed me"
-        android:textColor="@color/black"
-        android:textSize="25dp" />
-
+    android:background="@drawable/darkk">
 
 </RelativeLayout>

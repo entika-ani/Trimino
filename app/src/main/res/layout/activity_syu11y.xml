@@ -4,77 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Syu1_1y">
-
-    <ImageView
-
-        android:id="@+id/imageView_sad"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/sad" />
-
+    tools:context=".Syu1_1y"
+    android:background="@drawable/sad"
+    android:id="@+id/darkGreenLayout">
 
     <ImageView
         android:id="@+id/gion"
-        android:layout_width="255dp"
-        android:layout_height="538dp"
-        android:layout_above="@+id/mi_hat_het"
-        android:layout_marginBottom="-91dp"
+        android:layout_width="900dp"
+        android:layout_height="1500dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-255dp"
+        android:layout_marginBottom="-39dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/gion" />
-
-    <Button
-        android:id="@+id/nastroy"
-        android:layout_width="55dp"
-        android:layout_height="45dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="17dp"
-        android:backgroundTint="#B5B3B3"
-        />
-
-    <TextView
-        android:layout_width="45dp"
-        android:layout_height="25dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="12dp"
-        android:text="⚙️"
-        android:textSize="20dp" />
-
     <Button
         android:id="@+id/n_ej"
-        android:layout_width="75dp"
-        android:layout_height="wrap_content"
+        android:layout_width="245dp"
+        android:layout_height="143dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="17dp"
         android:backgroundTint="#B5B3B3"
-        android:text="BACK"
         android:onClick="back"
+        android:text="BACK"
         android:textColor="@color/black"
-        android:textSize="10dp"
+        android:textSize="40dp"
         android:textStyle="bold|italic" />
 
     <Button
         android:id="@+id/vibor1"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="112dp"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
         android:onClick="ah"
+        android:textSize="40dp"
         android:text="@string/vibor1"
         android:backgroundTint="#9AFAF737"
         android:background="@drawable/button_border_selector"/>
@@ -82,27 +48,13 @@
     <Button
         android:id="@+id/vibor2"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="150dp"
         android:layout_below="@+id/vibor1"
         android:onClick="ash"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
+        android:textSize="40dp"
         android:text="@string/vibor2"
         android:backgroundTint="#9AFAF737"
         android:background="@drawable/button_border_selector"/>
-
-
-
-    <Button
-        android:id="@+id/mi_hat_het"
-        android:layout_width="75dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="313dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#B5B3B3"
-        android:onClick="mi_hatHet" />
-
-
 </RelativeLayout>

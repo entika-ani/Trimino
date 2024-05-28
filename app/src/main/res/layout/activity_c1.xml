@@ -1,9 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/darkGreenLayout"
+    android:background="@drawable/moxir"
     tools:context=".glux6.C1">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/n_ej"
+        android:layout_width="245dp"
+        android:layout_height="143dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="#2DB5B3B3"
+        android:onClick="back"
+        android:text="BACK"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/lunaf"
+        android:layout_width="match_parent"
+        android:layout_height="1793dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-351dp"
+        android:layout_marginBottom="406dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lui2" />
+
+    <ImageView
+
+        android:id="@+id/magaxat"
+        android:layout_width="match_parent"
+        android:layout_height="449dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-70dp"
+        android:layout_marginBottom="387dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/magaxat" />
+
+    <TextView
+        android:layout_width="981dp"
+        android:layout_height="374dp"
+        android:layout_alignBottom="@+id/lunaf"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="5dp"
+        android:text="Lui:  Beloved of Elion, and the younger brother of Gion. He had been in love with Elion for 10 years and they were engaged for 5 years. Their love story... Everyone envied them. The kingdom's top archer and the princess of the land."
+        android:textColor="@color/black"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <ImageView
+
+        android:id="@+id/magaxat2"
+        android:layout_width="match_parent"
+        android:layout_height="449dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-70dp"
+        android:layout_marginBottom="-18dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/magaxat" />
+
+    <TextView
+        android:layout_width="981dp"
+        android:layout_height="374dp"
+        android:layout_alignBottom="@+id/magaxat2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="36dp"
+        android:text="Louis was the first boy she couldn't defeat; they had a fistfight, and that's when 14-year-old Louis fell in love with the 12-year-old princess. They always competed with each other. Louis initially won, but then he began to hold back, and when he saw Elion's smile, he fell even more in love with her."
+        android:textColor="@color/black"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+</RelativeLayout>
