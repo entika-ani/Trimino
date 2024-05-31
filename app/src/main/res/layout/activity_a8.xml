@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/darkGreenLayout"
+    android:background="@drawable/luna_tun"
+    tools:context=".glux5.A8">
+    <Button
+        android:id="@+id/n_ej"
+        android:layout_width="245dp"
+        android:layout_height="143dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="#4BB5B3B3"
+        android:onClick="back"
+        android:text="BACK"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/lunaf"
+        android:layout_width="897dp"
+        android:layout_height="1595dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-251dp"
+        android:layout_marginBottom="988dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/e_fact1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lunaf"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="415dp"
+        android:layout_toStartOf="@+id/lunaf"
+        android:text="Elion was shot.."
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <ImageView
+        android:id="@+id/lunad"
+        android:layout_width="818dp"
+        android:layout_height="1287dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-233dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/l1" />
+
+    <ImageView
+
+        android:id="@+id/magaxat"
+        android:layout_width="533dp"
+        android:layout_height="362dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-70dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="39dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/block" />
+
+    <TextView
+        android:layout_width="388dp"
+        android:layout_height="258dp"
+        android:layout_alignEnd="@+id/magaxat"
+        android:layout_alignBottom="@+id/magaxat"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="29dp"
+        android:text="NO, SISTER.."
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+</RelativeLayout>

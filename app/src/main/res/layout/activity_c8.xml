@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/darkGreenLayout"
+    android:background="@drawable/luna_tun_sev"
+    tools:context=".glux6.C8">
+
+    <Button
+        android:id="@+id/n_ej"
+        android:layout_width="245dp"
+        android:layout_height="143dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="#2DB5B3B3"
+        android:onClick="back"
+        android:text="BACK"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/vibor1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:onClick="ah"
+        android:textSize="40dp"
+        android:text="Kill him."
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="#6ADAD9BD" />
+
+    <Button
+        android:id="@+id/vibor2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/vibor1"
+        android:onClick="ash"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:textSize="40dp"
+        android:text="Pardon him but break off the engagement."
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="#6ADAD9BD"/>
+
+</RelativeLayout>

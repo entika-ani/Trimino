@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/darkGreenLayout"
+    android:background="@drawable/titer"
+    tools:context=".glux8.I5">
+
+    <Button
+        android:id="@+id/n_ej"
+        android:layout_width="245dp"
+        android:layout_height="143dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="#4BB5B3B3"
+        android:onClick="back"
+        android:text="BACK"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/lunaf"
+        android:layout_width="943dp"
+        android:layout_height="1024dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-138dp"
+        android:layout_marginBottom="676dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/s_fact2" />
+
+    <ImageView
+
+        android:id="@+id/magaxat"
+        android:layout_width="1011dp"
+        android:layout_height="515dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-70dp"
+        android:layout_marginBottom="70dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/block" />
+
+    <TextView
+        android:layout_width="869dp"
+        android:layout_height="320dp"
+        android:layout_alignEnd="@+id/magaxat"
+        android:layout_alignBottom="@+id/magaxat"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="127dp"
+        android:text="I regret not talking to you all for so long. Please forgive me. I've been reading books all the time, studying ways to save Saiven."
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/darkGreenLayout"
+    android:background="@drawable/luna_tun_sev"
+    tools:context=".glux6.C4">
+
+    <Button
+        android:id="@+id/n_ej"
+        android:layout_width="245dp"
+        android:layout_height="143dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="#4BB5B3B3"
+        android:onClick="back"
+        android:text="BACK"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/lunad"
+        android:layout_width="591dp"
+        android:layout_height="889dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-131dp"
+        android:layout_marginBottom="1067dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/f" />
+
+    <ImageView
+        android:id="@+id/lunaf"
+        android:layout_width="1108dp"
+        android:layout_height="1647dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-239dp"
+        android:layout_marginBottom="-279dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lui2" />
+
+    <ImageView
+
+        android:id="@+id/magaxat"
+        android:layout_width="449dp"
+        android:layout_height="347dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-70dp"
+        android:layout_marginEnd="384dp"
+        android:layout_marginBottom="1039dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/block" />
+
+
+    <TextView
+        android:layout_width="344dp"
+        android:layout_height="197dp"
+        android:layout_alignEnd="@+id/magaxat"
+        android:layout_alignBottom="@+id/magaxat"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="78dp"
+        android:text="You will talk."
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <ImageView
+
+        android:id="@+id/magaxat2"
+        android:layout_width="702dp"
+        android:layout_height="490dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-70dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/block" />
+
+    <TextView
+        android:layout_width="591dp"
+        android:layout_height="292dp"
+        android:layout_alignEnd="@+id/magaxat2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="150dp"
+        android:text="I can't believe I almost killed my fiancée, the one I love more than life itself. Please, kill me. I... I deserve to die."
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+</RelativeLayout>

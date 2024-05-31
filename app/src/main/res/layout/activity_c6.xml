@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/darkGreenLayout"
+    android:background="@drawable/luna_tun_sev"
+    tools:context=".glux6.C6">
+
+    <Button
+        android:id="@+id/n_ej"
+        android:layout_width="245dp"
+        android:layout_height="143dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="#4BB5B3B3"
+        android:onClick="back"
+        android:text="BACK"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold|italic" />
+
+
+    <ImageView
+        android:id="@+id/lunad"
+        android:layout_width="591dp"
+        android:layout_height="889dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-130dp"
+        android:layout_marginBottom="1127dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/f" />
+
+    <ImageView
+        android:id="@+id/lunaf"
+        android:layout_width="1179dp"
+        android:layout_height="1764dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-239dp"
+        android:layout_marginBottom="-279dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lui2" />
+
+
+    <ImageView
+
+        android:id="@+id/magaxat"
+        android:layout_width="469dp"
+        android:layout_height="335dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-70dp"
+        android:layout_marginEnd="385dp"
+        android:layout_marginBottom="1119dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/block" />
+
+    <TextView
+        android:layout_width="384dp"
+        android:layout_height="186dp"
+        android:layout_alignEnd="@+id/magaxat"
+        android:layout_alignBottom="@+id/magaxat"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="78dp"
+        android:text="Who ordered it?"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <ImageView
+
+        android:id="@+id/magaxat2"
+        android:layout_width="1022dp"
+        android:layout_height="514dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-70dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/block" />
+
+    <TextView
+        android:layout_width="897dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/magaxat2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="122dp"
+        android:text="I don't know, they sent me a letter, threatened that if I didn't do it, they would kill Elion. They paid me a huge sum; I wanted to run away with her, far from your conflicts. Build a house, start a family, have children..."
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+</RelativeLayout>

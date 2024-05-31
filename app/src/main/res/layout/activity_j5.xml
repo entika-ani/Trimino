@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/darkGreenLayout"
+    android:background="@drawable/pent"
+    tools:context=".glux9.J5">
+
+    <ImageView
+
+        android:id="@+id/magaxat"
+        android:layout_width="533dp"
+        android:layout_height="344dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-70dp"
+        android:layout_marginBottom="956dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/block" />
+
+    <TextView
+        android:layout_width="403dp"
+        android:layout_height="191dp"
+        android:layout_alignEnd="@+id/magaxat"
+        android:layout_alignBottom="@+id/magaxat"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="82dp"
+        android:text=" What happened?"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <ImageView
+
+        android:id="@+id/magaxat1"
+        android:layout_width="533dp"
+        android:layout_height="344dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-70dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="581dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/block" />
+
+    <TextView
+        android:layout_width="403dp"
+        android:layout_height="191dp"
+        android:layout_alignEnd="@+id/magaxat1"
+        android:layout_alignBottom="@+id/magaxat1"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="82dp"
+        android:text="Are you all okay?"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <ImageView
+
+        android:id="@+id/magaxat2"
+        android:layout_width="533dp"
+        android:layout_height="344dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-70dp"
+        android:layout_marginEnd="487dp"
+        android:layout_marginBottom="167dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/block" />
+
+    <TextView
+        android:layout_width="403dp"
+        android:layout_height="191dp"
+        android:layout_alignEnd="@+id/magaxat2"
+        android:layout_alignBottom="@+id/magaxat2"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="82dp"
+        android:text="Syven?"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+</RelativeLayout>

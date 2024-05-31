@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/darkGreenLayout"
+    android:background="@drawable/silfa_tun"
+    tools:context=".glux7.D6">
+
+    <Button
+        android:id="@+id/n_ej"
+        android:layout_width="245dp"
+        android:layout_height="143dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="#4BB5B3B3"
+        android:onClick="back"
+        android:text="BACK"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/lunaf"
+        android:layout_width="856dp"
+        android:layout_height="739dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-138dp"
+        android:layout_marginBottom="960dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/s_fact2" />
+
+    <ImageView
+
+        android:id="@+id/magaxat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-70dp"
+        android:layout_marginBottom="1054dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/block" />
+
+    <TextView
+        android:layout_width="517dp"
+        android:layout_height="212dp"
+        android:layout_alignEnd="@+id/magaxat"
+        android:layout_alignBottom="@+id/magaxat"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="132dp"
+        android:text="How awful. How is Elion now?"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <ImageView
+        android:id="@+id/lunad"
+        android:layout_width="936dp"
+        android:layout_height="1628dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="-388dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/f_fact4" />
+
+    <ImageView
+
+        android:id="@+id/magaxat3"
+        android:layout_width="691dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-70dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="-67dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/block" />
+
+    <TextView
+        android:layout_width="561dp"
+        android:layout_height="268dp"
+        android:layout_alignEnd="@+id/magaxat3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="43dp"
+        android:text="That's what happened. Luna healed her. She was one step away from death."
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/darkGreenLayout"
+    android:background="@drawable/pent"
+    tools:context=".glux9.J3">
+
+    <Button
+        android:id="@+id/n_ej"
+        android:layout_width="245dp"
+        android:layout_height="143dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="#4BB5B3B3"
+        android:onClick="back"
+        android:text="BACK"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/lunaf"
+        android:layout_width="888dp"
+        android:layout_height="890dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-243dp"
+        android:layout_marginBottom="870dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/l_fact3" />
+
+    <ImageView
+
+        android:id="@+id/magaxat"
+        android:layout_width="703dp"
+        android:layout_height="487dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-70dp"
+        android:layout_marginBottom="830dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/block" />
+
+    <TextView
+        android:layout_width="573dp"
+        android:layout_height="288dp"
+        android:layout_alignEnd="@+id/magaxat"
+        android:layout_alignBottom="@+id/magaxat"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="109dp"
+        android:text=" Yes, more than ever."
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <ImageView
+
+        android:id="@+id/magaxat3"
+        android:layout_width="956dp"
+        android:layout_height="588dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-70dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="-67dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/block" />
+
+    <TextView
+        android:layout_width="767dp"
+        android:layout_height="391dp"
+        android:layout_alignEnd="@+id/magaxat3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="75dp"
+        android:text="Okay girls, we each need to stand in our designated spot in the circle. Please don't forget the words and be confident that we will succeed. Our wish is to bring our younger brother back to life."
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+</RelativeLayout>
